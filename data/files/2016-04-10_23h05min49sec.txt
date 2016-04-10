@@ -1,0 +1,82 @@
+
+ Prises du 2016-04-10_23h05min36sec (avec find contours) sur 50 itérations
+***Comparaison des filtres sur algos***
+--------> Prise n°1
+Temps = 0.410670995712 ---> No tag found
+--------> Prise n°2
+Temps = 0.418874025345 ---> No tag found
+	1 seconde écoulée : 2 images prises
+--------> Prise n°3
+Temps = 0.315800189972 ---> No tag found
+--------> Prise n°4
+Temps = 0.431424856186 ---> No tag found
+--------> Prise n°5
+Temps = 0.419279098511 ---> No tag found
+	1 seconde écoulée : 3 images prises
+--------> Prise n°6
+Temps = 0.3236079216 ---> No tag found
+--------> Prise n°7
+Temps = 0.529201984406 ---> No tag found
+--------> Prise n°8
+Temps = 0.418110847473 ---> No tag found
+	1 seconde écoulée : 3 images prises
+--------> Prise n°9
+Temps = 0.433444976807 ---> No tag found
+--------> Prise n°10
+Temps = 0.527915000916 ---> No tag found
+--------> Prise n°11
+Temps = 0.41984796524 ---> No tag found
+	1 seconde écoulée : 3 images prises
+--------> Prise n°12
+Temps = 0.317134141922 ---> No tag found
+--------> Prise n°13
+Temps = 0.43535399437 ---> No tag found
+--------> Prise n°14
+Temps = 0.31799197197 ---> No tag found
+	1 seconde écoulée : 3 images prises
+--------> Prise n°15
+Temps = 0.207949876785 ---> No tag found
+--------> Prise n°16
+Temps = 0.212518930435 ---> No tag found
+--------> Prise n°17
+Temps = 0.214519023895 ---> No tag found
+--------> Prise n°18
+Temps = 0.318875074387 ---> No tag found
+--------> Prise n°19
+Temps = 0.216802835464 ---> No tag found
+	1 seconde écoulée : 5 images prises
+--------> Prise n°20
+Temps = 0.210152864456 ---> No tag found
+--------> Prise n°21
+Temps = 0.208469867706 ---> No tag found
+--------> Prise n°22
+Temps = 0.211155891418 ---> No tag found
+--------> Prise n°23
+Temps = 0.434478998184 ---> No tag found
+	1 seconde écoulée : 4 images prises
+--------> Prise n°24
+Temps = 0.317021846771 ---> No tag found
+--------> Prise n°25
+Temps = 0.210899829865 ---> No tag found
+--------> Prise n°26
+Temps = 0.433415174484 ---> No tag found
+	1 seconde écoulée : 3 images prises
+--------> Prise n°27
+Temps = 0.429579019547 ---> No tag found
+--------> Prise n°28
+Temps = 0.539001941681 ---> No tag found
+	1 seconde écoulée : 2 images prises
+--------> Prise n°29
+Temps = 0.210987091064 ---> No tag found
+--------> Prise n°30
+Temps = 0.41829419136 ---> No tag found
+--------> Prise n°31
+Temps = 0.418658971786 ---> No tag found
+	1 seconde écoulée : 3 images prises
+--------> Prise n°32
+Temps = 0.433712005615 ---> No tag found
+--------> Prise n°33
+Temps = 0.424494028091 ---> No tag found
+--------> Prise n°34
+Temps = 0.316434144974 ---> No tag found
+Fin Prise

@@ -1,0 +1,40 @@
+
+ Prises du 2016-04-10_22h51min26sec (avec find contours) sur 50 itérations
+***Comparaison des filtres sur algos***
+--------> Prise n°1
+Temps = 11.262034893 ---> No tag found
+	1 seconde écoulée : 1 images prises
+--------> Prise n°2
+Temps = 31.7166359425 ---> No tag found
+	1 seconde écoulée : 1 images prises
+--------> Prise n°3
+Temps = 3.60218691826 ---> No tag found
+	1 seconde écoulée : 1 images prises
+--------> Prise n°4
+Temps = 2.00153899193 ---> No tag found
+	1 seconde écoulée : 1 images prises
+--------> Prise n°5
+Temps = 1.51271700859 ---> No tag found
+	1 seconde écoulée : 1 images prises
+--------> Prise n°6
+Temps = 2.07134985924 ---> No tag found
+	1 seconde écoulée : 1 images prises
+--------> Prise n°7
+Temps = 10.98528409 ---> No tag found
+	1 seconde écoulée : 1 images prises
+--------> Prise n°8
+Temps = 16.5941359997 ---> No tag found
+	1 seconde écoulée : 1 images prises
+--------> Prise n°9
+Temps = 0.721531152725 ---> No tag found
+--------> Prise n°10
+Temps = 0.446875095367 ---> No tag found
+	1 seconde écoulée : 2 images prises
+--------> Prise n°11
+Temps = 0.438277006149 ---> No tag found
+--------> Prise n°12
+Temps = 0.557222127914 ---> No tag found
+	1 seconde écoulée : 2 images prises
+--------> Prise n°13
+Temps = 0.213174819946 ---> No tag found
+Fin Prise

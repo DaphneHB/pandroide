@@ -6,6 +6,7 @@ Created on Fri Mar 18 19:21:36 2016
 """
 
 import time
+import find_tag_id as tagid
 # to make files more legible
 from constants import *
 
@@ -420,7 +421,52 @@ def is_real_tag(tag):
     Checking is the read tag really is a tag (not a window)
     Return True if the tag is a good one
     """
-    return False
+    dt = time.time()
+    width, height = tag.shape
+    height -= 1
+    width -= 1
+    supp = SUPP_MARGIN
+    margin = OCCLUSION_MARGIN * width / TAG_WIDTH
+    # computing the edges percentages
+    col_per = margin / width
+    lign_per = margin / height
+    # retrieving the rightmost border
+    col1 = tag[0+supp:width-supp,0+supp:height*col_per-supp]
+    # retrieving the leftmost border
+    col2 = tag[0+supp:width-supp,height-height*col_per+supp:height-supp]
+    # retrieving the upper border
+    lign1 = tag[0+supp:width*lign_per-supp,0+supp:height-supp]
+    # retrieving the lower border
+    lign2 = tag[width-width*lign_per+supp:width-supp,0+supp:height-supp]
+    cv2.imshow("lign1", lign1)
+    cv2.imshow("lign2", lign2)
+    cv2.imshow("col1", col1)
+    cv2.imshow("col2", col2)
+    #cv2.waitKey(0)
+
+    per1 = float(np.count_nonzero(lign1)) / (len(lign1) * len(lign1[0]))
+    if not (per1 > 0.25 and per1 < 0.55):
+        print False, "per1", per1
+        return False
+    per2 = float(np.count_nonzero(lign2)) / (len(lign2) * len(lign2[0]))
+    if not (per2 > 0.25 and per2 < 0.55):
+        print False, "per2", per2
+        return False
+    per3 = float(np.count_nonzero(col1)) / (len(col1) * len(col1[0]))
+    if not (per3 > 0.25 and per3 < 0.55):
+        print False, "per3", per3
+        return False
+    per4 = float(np.count_nonzero(col2)) / (len(col2) * len(col2[0]))
+    if not (per4 > 0.25 and per4 < 0.55):
+        print False, "per4", per4
+        return False
+    print True
+    print per1, per2, per3, per4
+
+    # time testing
+    ft = time.time()
+    print "Ca prend ", ft - dt
+    return True
 
 
 def check_tags(gray, tagz_cont):
@@ -428,6 +474,7 @@ def check_tags(gray, tagz_cont):
     Foreach tag's contours found in the image, checking if it's a good one
     Return the list of tuples with (robot's number, robot's orientation, robot's coordinates)
     """
+    global IEME_TAG
     views = list()
     # foreach contour found
     for cnt in tagz_cont:
@@ -435,16 +482,38 @@ def check_tags(gray, tagz_cont):
         # computing the min area bounding/fitting rect (even rotated)
         rect = cv2.minAreaRect(cnt)
         box = np.int0(cv2.cv.BoxPoints(rect))
+
         # getting the translation of the tag
         tag = imgHomot(gray, box)
+        # thresholding for a better use after
+        thresh = threshold_baw(tag,170)
         cv2.imshow("found", tag)
         time.sleep(0.1)
         # the contour found isn't a tag
-        if not is_real_tag(tag):
+        if not is_real_tag(thresh):
             continue
+        else:
+            IEME_TAG += 1
+            cv2.imwrite(IMG_PATH+"tag_view"+str(IEME_TAG)+".png",tag)
             # else :
             # check the id, orientation and coordinates of the bot
             # reading the info in the tag
-            # lecture_tag(tag_gray)
-            # add them to the list views
+            data =  tagid.lecture_tag(tag)
+            if data is None:
+                continue
+            # else : add them to the list views
+            print data
+            #views.append(data)
     return views
+
+def apply_filters(img):
+    # Faster without np?
+    # hist = cv2.calcHist([img], [0], None, [256], [0, 256])
+    hist, bins = np.histogram(img.flatten(), 256, [0, 256])
+    cdf = hist.cumsum()
+    cdf_m = np.ma.masked_equal(cdf, 0)
+    cdf_m = (cdf_m - cdf_m.min()) * 255 / (cdf_m.max() - cdf_m.min())
+    cdf = np.ma.filled(cdf_m, 0).astype('uint8')
+    img3 = cdf[img]
+    ret, thresh = cv2.threshold(img3, 127, 255, 0)
+    return thresh

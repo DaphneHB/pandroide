@@ -42,7 +42,7 @@ def found_tag_img_comps(img):
     # getting the image in gray
     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
     string = ""
-    time.sleep(0.2)
+    #time.sleep(0.2)
     ####### Our
     dt = time.time()
     contours = getTagBox_vOur(gray)
