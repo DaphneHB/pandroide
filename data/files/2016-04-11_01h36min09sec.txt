@@ -1,0 +1,1848 @@
+
+ Prises du 2016-04-11_01h35min49sec (avec find contours) sur 50 itérations
+***Comparaison des filtres sur algos***
+--------> Prise n°0
+Temps = 0.0267779827118 ---> No tag found
+--------> Prise n°1
+Temps = 0.00708985328674 ---> No tag found
+--------> Prise n°2
+Temps = 0.00716209411621 ---> No tag found
+--------> Prise n°3
+Temps = 0.00721597671509 ---> No tag found
+--------> Prise n°4
+Temps = 0.00662589073181 ---> No tag found
+--------> Prise n°5
+Temps = 0.00674104690552 ---> No tag found
+--------> Prise n°6
+Temps = 0.00620913505554 ---> No tag found
+--------> Prise n°7
+Temps = 0.00669097900391 ---> No tag found
+--------> Prise n°8
+Temps = 0.00632095336914 ---> No tag found
+--------> Prise n°9
+Temps = 0.00674295425415 ---> No tag found
+--------> Prise n°10
+Temps = 0.00612807273865 ---> No tag found
+--------> Prise n°11
+Temps = 0.0064640045166 ---> No tag found
+--------> Prise n°12
+Temps = 0.00714683532715 ---> No tag found
+--------> Prise n°13
+Temps = 0.006432056427 ---> No tag found
+--------> Prise n°14
+Temps = 0.00600099563599 ---> No tag found
+--------> Prise n°15
+Temps = 0.00656294822693 ---> No tag found
+--------> Prise n°16
+Temps = 0.00617909431458 ---> No tag found
+--------> Prise n°17
+Temps = 0.00644207000732 ---> No tag found
+--------> Prise n°18
+Temps = 0.00596880912781 ---> No tag found
+--------> Prise n°19
+Temps = 0.00641989707947 ---> No tag found
+--------> Prise n°20
+Temps = 0.00599002838135 ---> No tag found
+--------> Prise n°21
+Temps = 0.00656294822693 ---> No tag found
+--------> Prise n°22
+Temps = 0.0061719417572 ---> No tag found
+--------> Prise n°23
+Temps = 0.0069260597229 ---> No tag found
+--------> Prise n°24
+Temps = 0.00614094734192 ---> No tag found
+--------> Prise n°25
+Temps = 0.0068519115448 ---> No tag found
+--------> Prise n°26
+Temps = 0.00615096092224 ---> No tag found
+--------> Prise n°27
+Temps = 0.0065770149231 ---> No tag found
+--------> Prise n°28
+Temps = 0.0062620639801 ---> No tag found
+--------> Prise n°29
+Temps = 0.0065610408783 ---> No tag found
+--------> Prise n°30
+Temps = 0.0060670375824 ---> No tag found
+--------> Prise n°31
+Temps = 0.0064058303833 ---> No tag found
+--------> Prise n°32
+Temps = 0.00601196289062 ---> No tag found
+--------> Prise n°33
+Temps = 0.00645303726196 ---> No tag found
+--------> Prise n°34
+Temps = 0.00996589660645 ---> No tag found
+--------> Prise n°35
+Temps = 0.00653004646301 ---> No tag found
+--------> Prise n°36
+Temps = 0.00606203079224 ---> No tag found
+--------> Prise n°37
+Temps = 0.00653195381165 ---> No tag found
+--------> Prise n°38
+Temps = 0.00610208511353 ---> No tag found
+--------> Prise n°39
+Temps = 0.00649499893188 ---> No tag found
+--------> Prise n°40
+Temps = 0.00609493255615 ---> No tag found
+--------> Prise n°41
+Temps = 0.00648784637451 ---> No tag found
+--------> Prise n°42
+Temps = 0.00603985786438 ---> No tag found
+--------> Prise n°43
+Temps = 0.00644397735596 ---> No tag found
+--------> Prise n°44
+Temps = 0.00603890419006 ---> No tag found
+--------> Prise n°45
+Temps = 0.00700402259827 ---> No tag found
+--------> Prise n°46
+Temps = 0.00624489784241 ---> No tag found
+--------> Prise n°47
+Temps = 0.00656890869141 ---> No tag found
+--------> Prise n°48
+Temps = 0.0062518119812 ---> No tag found
+--------> Prise n°49
+Temps = 0.00666189193726 ---> No tag found
+--------> Prise n°50
+Temps = 0.00616884231567 ---> No tag found
+--------> Prise n°51
+Temps = 0.00680303573608 ---> No tag found
+--------> Prise n°52
+Temps = 0.006422996521 ---> No tag found
+--------> Prise n°53
+Temps = 0.00681614875793 ---> No tag found
+--------> Prise n°54
+Temps = 0.00636601448059 ---> No tag found
+--------> Prise n°55
+Temps = 0.00685501098633 ---> No tag found
+--------> Prise n°56
+Temps = 0.0066978931427 ---> No tag found
+--------> Prise n°57
+Temps = 0.00690817832947 ---> No tag found
+--------> Prise n°58
+Temps = 0.00651502609253 ---> No tag found
+--------> Prise n°59
+Temps = 0.00688791275024 ---> No tag found
+--------> Prise n°60
+Temps = 0.00631403923035 ---> No tag found
+--------> Prise n°61
+Temps = 0.00662302970886 ---> No tag found
+--------> Prise n°62
+Temps = 0.00638103485107 ---> No tag found
+--------> Prise n°63
+Temps = 0.00669097900391 ---> No tag found
+--------> Prise n°64
+Temps = 0.00622296333313 ---> No tag found
+--------> Prise n°65
+Temps = 0.00667595863342 ---> No tag found
+--------> Prise n°66
+Temps = 0.00628113746643 ---> No tag found
+--------> Prise n°67
+Temps = 0.00685119628906 ---> No tag found
+--------> Prise n°68
+Temps = 0.00628304481506 ---> No tag found
+--------> Prise n°69
+Temps = 0.00666093826294 ---> No tag found
+--------> Prise n°70
+Temps = 0.00688219070435 ---> No tag found
+--------> Prise n°71
+Temps = 0.00671696662903 ---> No tag found
+--------> Prise n°72
+Temps = 0.00684714317322 ---> No tag found
+--------> Prise n°73
+Temps = 0.00627303123474 ---> No tag found
+--------> Prise n°74
+Temps = 0.0067138671875 ---> No tag found
+--------> Prise n°75
+Temps = 0.00970101356506 ---> No tag found
+--------> Prise n°76
+Temps = 0.0101759433746 ---> No tag found
+--------> Prise n°77
+Temps = 0.00631999969482 ---> No tag found
+--------> Prise n°78
+Temps = 0.00686478614807 ---> No tag found
+--------> Prise n°79
+Temps = 0.00631189346313 ---> No tag found
+--------> Prise n°80
+Temps = 0.00676703453064 ---> No tag found
+--------> Prise n°81
+Temps = 0.00652289390564 ---> No tag found
+--------> Prise n°82
+Temps = 0.00691604614258 ---> No tag found
+--------> Prise n°83
+Temps = 0.00628781318665 ---> No tag found
+--------> Prise n°84
+Temps = 0.00682902336121 ---> No tag found
+--------> Prise n°85
+Temps = 0.00652003288269 ---> No tag found
+--------> Prise n°86
+Temps = 0.00702500343323 ---> No tag found
+--------> Prise n°87
+Temps = 0.00658512115479 ---> No tag found
+--------> Prise n°88
+Temps = 0.00691699981689 ---> No tag found
+--------> Prise n°89
+Temps = 0.00628781318665 ---> No tag found
+--------> Prise n°90
+Temps = 0.00675988197327 ---> No tag found
+--------> Prise n°91
+Temps = 0.0067400932312 ---> No tag found
+--------> Prise n°92
+Temps = 0.00688099861145 ---> No tag found
+--------> Prise n°93
+Temps = 0.00693106651306 ---> No tag found
+--------> Prise n°94
+Temps = 0.0111570358276 ---> No tag found
+--------> Prise n°95
+Temps = 0.0100560188293 ---> No tag found
+--------> Prise n°96
+Temps = 0.007169008255 ---> No tag found
+--------> Prise n°97
+Temps = 0.00675892829895 ---> No tag found
+--------> Prise n°98
+Temps = 0.00916290283203 ---> No tag found
+--------> Prise n°99
+Temps = 0.00664687156677 ---> No tag found
+--------> Prise n°100
+Temps = 0.00691294670105 ---> No tag found
+--------> Prise n°101
+Temps = 0.00658988952637 ---> No tag found
+--------> Prise n°102
+Temps = 0.0101668834686 ---> No tag found
+--------> Prise n°103
+Temps = 0.0101361274719 ---> No tag found
+--------> Prise n°104
+Temps = 0.0100319385529 ---> No tag found
+--------> Prise n°105
+Temps = 0.00956702232361 ---> No tag found
+--------> Prise n°106
+Temps = 0.00663185119629 ---> No tag found
+--------> Prise n°107
+Temps = 0.00621795654297 ---> No tag found
+--------> Prise n°108
+Temps = 0.0100288391113 ---> No tag found
+--------> Prise n°109
+Temps = 0.00609993934631 ---> No tag found
+--------> Prise n°110
+Temps = 0.00687289237976 ---> No tag found
+--------> Prise n°111
+Temps = 0.0055980682373 ---> No tag found
+--------> Prise n°112
+Temps = 0.00684404373169 ---> No tag found
+--------> Prise n°113
+Temps = 0.00625801086426 ---> No tag found
+--------> Prise n°114
+Temps = 0.006511926651 ---> No tag found
+--------> Prise n°115
+Temps = 0.0062620639801 ---> No tag found
+--------> Prise n°116
+Temps = 0.00664186477661 ---> No tag found
+--------> Prise n°117
+Temps = 0.00635099411011 ---> No tag found
+--------> Prise n°118
+Temps = 0.00669193267822 ---> No tag found
+--------> Prise n°119
+Temps = 0.0063259601593 ---> No tag found
+--------> Prise n°120
+Temps = 0.00670099258423 ---> No tag found
+--------> Prise n°121
+Temps = 0.00634789466858 ---> No tag found
+--------> Prise n°122
+Temps = 0.00667190551758 ---> No tag found
+--------> Prise n°123
+Temps = 0.00651001930237 ---> No tag found
+--------> Prise n°124
+Temps = 0.0127940177917 ---> No tag found
+--------> Prise n°125
+Temps = 0.0169010162354 ---> No tag found
+--------> Prise n°126
+Temps = 0.017865896225 ---> No tag found
+--------> Prise n°127
+Temps = 0.0136759281158 ---> No tag found
+--------> Prise n°128
+Temps = 0.00595903396606 ---> No tag found
+--------> Prise n°129
+Temps = 0.00662398338318 ---> No tag found
+--------> Prise n°130
+Temps = 0.00624489784241 ---> No tag found
+--------> Prise n°131
+Temps = 0.00644397735596 ---> No tag found
+--------> Prise n°132
+Temps = 0.00694012641907 ---> No tag found
+--------> Prise n°133
+Temps = 0.0101230144501 ---> No tag found
+--------> Prise n°134
+Temps = 0.0062301158905 ---> No tag found
+--------> Prise n°135
+Temps = 0.00687503814697 ---> No tag found
+--------> Prise n°136
+Temps = 0.00660514831543 ---> No tag found
+--------> Prise n°137
+Temps = 0.00703406333923 ---> No tag found
+--------> Prise n°138
+Temps = 0.00720882415771 ---> No tag found
+--------> Prise n°139
+Temps = 0.00704979896545 ---> No tag found
+--------> Prise n°140
+Temps = 0.00630378723145 ---> No tag found
+--------> Prise n°141
+Temps = 0.00743913650513 ---> No tag found
+--------> Prise n°142
+Temps = 0.00696396827698 ---> No tag found
+--------> Prise n°143
+Temps = 0.0108118057251 ---> No tag found
+--------> Prise n°144
+Temps = 0.00918412208557 ---> No tag found
+--------> Prise n°145
+Temps = 0.00676894187927 ---> No tag found
+--------> Prise n°146
+Temps = 0.00961899757385 ---> No tag found
+--------> Prise n°147
+Temps = 0.00714588165283 ---> No tag found
+--------> Prise n°148
+Temps = 0.0136110782623 ---> No tag found
+--------> Prise n°149
+Temps = 0.00729608535767 ---> No tag found
+--------> Prise n°150
+Temps = 0.00730395317078 ---> No tag found
+--------> Prise n°151
+Temps = 0.00693917274475 ---> No tag found
+--------> Prise n°152
+Temps = 0.00619101524353 ---> No tag found
+--------> Prise n°153
+Temps = 0.00714492797852 ---> No tag found
+--------> Prise n°154
+Temps = 0.00669980049133 ---> No tag found
+--------> Prise n°155
+Temps = 0.00724101066589 ---> No tag found
+--------> Prise n°156
+Temps = 0.00727105140686 ---> No tag found
+--------> Prise n°157
+Temps = 0.00642800331116 ---> No tag found
+--------> Prise n°158
+Temps = 0.00582098960876 ---> No tag found
+--------> Prise n°159
+Temps = 0.00667190551758 ---> No tag found
+--------> Prise n°160
+Temps = 0.00633001327515 ---> No tag found
+--------> Prise n°161
+Temps = 0.00673699378967 ---> No tag found
+--------> Prise n°162
+Temps = 0.00681591033936 ---> No tag found
+--------> Prise n°163
+Temps = 0.00608992576599 ---> No tag found
+--------> Prise n°164
+Temps = 0.00563502311707 ---> No tag found
+--------> Prise n°165
+Temps = 0.00683689117432 ---> No tag found
+--------> Prise n°166
+Temps = 0.00672507286072 ---> No tag found
+--------> Prise n°167
+Temps = 0.0069420337677 ---> No tag found
+--------> Prise n°168
+Temps = 0.00745296478271 ---> No tag found
+--------> Prise n°169
+Temps = 0.00700211524963 ---> No tag found
+--------> Prise n°170
+Temps = 0.00702810287476 ---> No tag found
+--------> Prise n°171
+Temps = 0.00720882415771 ---> No tag found
+--------> Prise n°172
+Temps = 0.00690698623657 ---> No tag found
+--------> Prise n°173
+Temps = 0.00720191001892 ---> No tag found
+--------> Prise n°174
+Temps = 0.00735807418823 ---> No tag found
+--------> Prise n°175
+Temps = 0.0102179050446 ---> No tag found
+--------> Prise n°176
+Temps = 0.00991106033325 ---> No tag found
+--------> Prise n°177
+Temps = 0.0105531215668 ---> No tag found
+--------> Prise n°178
+Temps = 0.00984907150269 ---> No tag found
+--------> Prise n°179
+Temps = 0.0138771533966 ---> No tag found
+--------> Prise n°180
+Temps = 0.00734496116638 ---> No tag found
+--------> Prise n°181
+Temps = 0.0067138671875 ---> No tag found
+--------> Prise n°182
+Temps = 0.010400056839 ---> No tag found
+--------> Prise n°183
+Temps = 0.00710988044739 ---> No tag found
+--------> Prise n°184
+Temps = 0.00685715675354 ---> No tag found
+--------> Prise n°185
+Temps = 0.0106029510498 ---> No tag found
+--------> Prise n°186
+Temps = 0.00738000869751 ---> No tag found
+--------> Prise n°187
+Temps = 0.00692009925842 ---> No tag found
+--------> Prise n°188
+Temps = 0.00977206230164 ---> No tag found
+--------> Prise n°189
+Temps = 0.00686407089233 ---> No tag found
+--------> Prise n°190
+Temps = 0.013612985611 ---> No tag found
+--------> Prise n°191
+Temps = 0.00734186172485 ---> No tag found
+--------> Prise n°192
+Temps = 0.00794100761414 ---> No tag found
+--------> Prise n°193
+Temps = 0.0070788860321 ---> No tag found
+--------> Prise n°194
+Temps = 0.0066511631012 ---> No tag found
+--------> Prise n°195
+Temps = 0.00743103027344 ---> No tag found
+--------> Prise n°196
+Temps = 0.00698399543762 ---> No tag found
+--------> Prise n°197
+Temps = 0.00730991363525 ---> No tag found
+--------> Prise n°198
+Temps = 0.00740599632263 ---> No tag found
+--------> Prise n°199
+Temps = 0.0103471279144 ---> No tag found
+--------> Prise n°200
+Temps = 0.00606298446655 ---> No tag found
+--------> Prise n°201
+Temps = 0.00812292098999 ---> No tag found
+--------> Prise n°202
+Temps = 0.00682187080383 ---> No tag found
+--------> Prise n°203
+Temps = 0.00723576545715 ---> No tag found
+--------> Prise n°204
+Temps = 0.0109379291534 ---> No tag found
+--------> Prise n°205
+Temps = 0.0102272033691 ---> No tag found
+--------> Prise n°206
+Temps = 0.00989603996277 ---> No tag found
+--------> Prise n°207
+Temps = 0.0108120441437 ---> No tag found
+--------> Prise n°208
+Temps = 0.0101850032806 ---> No tag found
+--------> Prise n°209
+Temps = 0.0107040405273 ---> No tag found
+--------> Prise n°210
+Temps = 0.0109992027283 ---> No tag found
+--------> Prise n°211
+Temps = 0.00647211074829 ---> No tag found
+--------> Prise n°212
+Temps = 0.00982403755188 ---> No tag found
+--------> Prise n°213
+Temps = 0.010712146759 ---> No tag found
+--------> Prise n°214
+Temps = 0.0101020336151 ---> No tag found
+--------> Prise n°215
+Temps = 0.00697994232178 ---> No tag found
+--------> Prise n°216
+Temps = 0.0106918811798 ---> No tag found
+--------> Prise n°217
+Temps = 0.0101790428162 ---> No tag found
+--------> Prise n°218
+Temps = 0.0097279548645 ---> No tag found
+--------> Prise n°219
+Temps = 0.010468006134 ---> No tag found
+--------> Prise n°220
+Temps = 0.0101938247681 ---> No tag found
+--------> Prise n°221
+Temps = 0.0105841159821 ---> No tag found
+--------> Prise n°222
+Temps = 0.00640797615051 ---> No tag found
+--------> Prise n°223
+Temps = 0.00649690628052 ---> No tag found
+--------> Prise n°224
+Temps = 0.0096869468689 ---> No tag found
+--------> Prise n°225
+Temps = 0.0106489658356 ---> No tag found
+--------> Prise n°226
+Temps = 0.010213136673 ---> No tag found
+--------> Prise n°227
+Temps = 0.00721788406372 ---> No tag found
+--------> Prise n°228
+Temps = 0.00743913650513 ---> No tag found
+--------> Prise n°229
+Temps = 0.00680494308472 ---> No tag found
+--------> Prise n°230
+Temps = 0.00624299049377 ---> No tag found
+--------> Prise n°231
+Temps = 0.00710701942444 ---> No tag found
+--------> Prise n°232
+Temps = 0.0069580078125 ---> No tag found
+--------> Prise n°233
+Temps = 0.00734210014343 ---> No tag found
+--------> Prise n°234
+Temps = 0.00712394714355 ---> No tag found
+--------> Prise n°235
+Temps = 0.00706005096436 ---> No tag found
+--------> Prise n°236
+Temps = 0.00674104690552 ---> No tag found
+--------> Prise n°237
+Temps = 0.00721597671509 ---> No tag found
+--------> Prise n°238
+Temps = 0.00680494308472 ---> No tag found
+--------> Prise n°239
+Temps = 0.007159948349 ---> No tag found
+--------> Prise n°240
+Temps = 0.0107970237732 ---> No tag found
+--------> Prise n°241
+Temps = 0.0102360248566 ---> No tag found
+--------> Prise n°242
+Temps = 0.00629806518555 ---> No tag found
+--------> Prise n°243
+Temps = 0.00710606575012 ---> No tag found
+--------> Prise n°244
+Temps = 0.00670409202576 ---> No tag found
+--------> Prise n°245
+Temps = 0.00676679611206 ---> No tag found
+--------> Prise n°246
+Temps = 0.00738191604614 ---> No tag found
+--------> Prise n°247
+Temps = 0.00655198097229 ---> No tag found
+--------> Prise n°248
+Temps = 0.0061948299408 ---> No tag found
+--------> Prise n°249
+Temps = 0.00725388526917 ---> No tag found
+--------> Prise n°250
+Temps = 0.00678396224976 ---> No tag found
+--------> Prise n°251
+Temps = 0.00704312324524 ---> No tag found
+--------> Prise n°252
+Temps = 0.00741100311279 ---> No tag found
+--------> Prise n°253
+Temps = 0.00694394111633 ---> No tag found
+--------> Prise n°254
+Temps = 0.00618886947632 ---> No tag found
+--------> Prise n°255
+Temps = 0.00707316398621 ---> No tag found
+--------> Prise n°256
+Temps = 0.00642704963684 ---> No tag found
+--------> Prise n°257
+Temps = 0.00697803497314 ---> No tag found
+--------> Prise n°258
+Temps = 0.0108680725098 ---> No tag found
+--------> Prise n°259
+Temps = 0.00672101974487 ---> No tag found
+--------> Prise n°260
+Temps = 0.00968885421753 ---> No tag found
+--------> Prise n°261
+Temps = 0.00684499740601 ---> No tag found
+--------> Prise n°262
+Temps = 0.00987410545349 ---> No tag found
+--------> Prise n°263
+Temps = 0.0105450153351 ---> No tag found
+--------> Prise n°264
+Temps = 0.0110549926758 ---> No tag found
+--------> Prise n°265
+Temps = 0.00993204116821 ---> No tag found
+--------> Prise n°266
+Temps = 0.00621294975281 ---> No tag found
+--------> Prise n°267
+Temps = 0.00665903091431 ---> No tag found
+--------> Prise n°268
+Temps = 0.00648617744446 ---> No tag found
+--------> Prise n°269
+Temps = 0.00698399543762 ---> No tag found
+--------> Prise n°270
+Temps = 0.00732207298279 ---> No tag found
+--------> Prise n°271
+Temps = 0.00677895545959 ---> No tag found
+--------> Prise n°272
+Temps = 0.00644111633301 ---> No tag found
+--------> Prise n°273
+Temps = 0.00718808174133 ---> No tag found
+--------> Prise n°274
+Temps = 0.0066511631012 ---> No tag found
+--------> Prise n°275
+Temps = 0.00697588920593 ---> No tag found
+--------> Prise n°276
+Temps = 0.00722908973694 ---> No tag found
+--------> Prise n°277
+Temps = 0.00652098655701 ---> No tag found
+--------> Prise n°278
+Temps = 0.00582194328308 ---> No tag found
+--------> Prise n°279
+Temps = 0.00696110725403 ---> No tag found
+--------> Prise n°280
+Temps = 0.00662183761597 ---> No tag found
+--------> Prise n°281
+Temps = 0.00701808929443 ---> No tag found
+--------> Prise n°282
+Temps = 0.00717496871948 ---> No tag found
+--------> Prise n°283
+Temps = 0.00649094581604 ---> No tag found
+--------> Prise n°284
+Temps = 0.00597786903381 ---> No tag found
+--------> Prise n°285
+Temps = 0.00695991516113 ---> No tag found
+--------> Prise n°286
+Temps = 0.00638198852539 ---> No tag found
+--------> Prise n°287
+Temps = 0.00691103935242 ---> No tag found
+--------> Prise n°288
+Temps = 0.00719404220581 ---> No tag found
+--------> Prise n°289
+Temps = 0.00622797012329 ---> No tag found
+--------> Prise n°290
+Temps = 0.00605702400208 ---> No tag found
+--------> Prise n°291
+Temps = 0.00680899620056 ---> No tag found
+--------> Prise n°292
+Temps = 0.0064549446106 ---> No tag found
+--------> Prise n°293
+Temps = 0.00705790519714 ---> No tag found
+--------> Prise n°294
+Temps = 0.00717902183533 ---> No tag found
+--------> Prise n°295
+Temps = 0.00642919540405 ---> No tag found
+--------> Prise n°296
+Temps = 0.00607490539551 ---> No tag found
+--------> Prise n°297
+Temps = 0.00688195228577 ---> No tag found
+--------> Prise n°298
+Temps = 0.00647616386414 ---> No tag found
+--------> Prise n°299
+Temps = 0.00682210922241 ---> No tag found
+--------> Prise n°300
+Temps = 0.0105199813843 ---> No tag found
+--------> Prise n°301
+Temps = 0.00650405883789 ---> No tag found
+--------> Prise n°302
+Temps = 0.00600910186768 ---> No tag found
+--------> Prise n°303
+Temps = 0.00691509246826 ---> No tag found
+--------> Prise n°304
+Temps = 0.00656509399414 ---> No tag found
+--------> Prise n°305
+Temps = 0.00690817832947 ---> No tag found
+--------> Prise n°306
+Temps = 0.00715804100037 ---> No tag found
+--------> Prise n°307
+Temps = 0.00653290748596 ---> No tag found
+--------> Prise n°308
+Temps = 0.00608706474304 ---> No tag found
+--------> Prise n°309
+Temps = 0.00693988800049 ---> No tag found
+--------> Prise n°310
+Temps = 0.00654006004333 ---> No tag found
+--------> Prise n°311
+Temps = 0.0100741386414 ---> No tag found
+--------> Prise n°312
+Temps = 0.00715899467468 ---> No tag found
+--------> Prise n°313
+Temps = 0.00660586357117 ---> No tag found
+--------> Prise n°314
+Temps = 0.00607895851135 ---> No tag found
+--------> Prise n°315
+Temps = 0.00695013999939 ---> No tag found
+--------> Prise n°316
+Temps = 0.00653195381165 ---> No tag found
+--------> Prise n°317
+Temps = 0.006991147995 ---> No tag found
+--------> Prise n°318
+Temps = 0.00720715522766 ---> No tag found
+--------> Prise n°319
+Temps = 0.00650906562805 ---> No tag found
+--------> Prise n°320
+Temps = 0.006108045578 ---> No tag found
+--------> Prise n°321
+Temps = 0.00690698623657 ---> No tag found
+--------> Prise n°322
+Temps = 0.00978207588196 ---> No tag found
+--------> Prise n°323
+Temps = 0.00704407691956 ---> No tag found
+--------> Prise n°324
+Temps = 0.00703191757202 ---> No tag found
+--------> Prise n°325
+Temps = 0.00650811195374 ---> No tag found
+--------> Prise n°326
+Temps = 0.00624585151672 ---> No tag found
+--------> Prise n°327
+Temps = 0.00731301307678 ---> No tag found
+--------> Prise n°328
+Temps = 0.00705313682556 ---> No tag found
+--------> Prise n°329
+Temps = 0.0076699256897 ---> No tag found
+--------> Prise n°330
+Temps = 0.00771808624268 ---> No tag found
+--------> Prise n°331
+Temps = 0.00708198547363 ---> No tag found
+--------> Prise n°332
+Temps = 0.00680708885193 ---> No tag found
+--------> Prise n°333
+Temps = 0.00622797012329 ---> No tag found
+--------> Prise n°334
+Temps = 0.00994992256165 ---> No tag found
+--------> Prise n°335
+Temps = 0.00744700431824 ---> No tag found
+--------> Prise n°336
+Temps = 0.00769400596619 ---> No tag found
+--------> Prise n°337
+Temps = 0.00702500343323 ---> No tag found
+--------> Prise n°338
+Temps = 0.0068519115448 ---> No tag found
+--------> Prise n°339
+Temps = 0.00749707221985 ---> No tag found
+--------> Prise n°340
+Temps = 0.00664591789246 ---> No tag found
+--------> Prise n°341
+Temps = 0.0071280002594 ---> No tag found
+--------> Prise n°342
+Temps = 0.00762414932251 ---> No tag found
+--------> Prise n°343
+Temps = 0.00692796707153 ---> No tag found
+--------> Prise n°344
+Temps = 0.00652599334717 ---> No tag found
+--------> Prise n°345
+Temps = 0.00688815116882 ---> No tag found
+--------> Prise n°346
+Temps = 0.00676202774048 ---> No tag found
+--------> Prise n°347
+Temps = 0.00713205337524 ---> No tag found
+--------> Prise n°348
+Temps = 0.00720405578613 ---> No tag found
+--------> Prise n°349
+Temps = 0.00666499137878 ---> No tag found
+--------> Prise n°350
+Temps = 0.00609397888184 ---> No tag found
+--------> Prise n°351
+Temps = 0.00702309608459 ---> No tag found
+--------> Prise n°352
+Temps = 0.00666213035583 ---> No tag found
+--------> Prise n°353
+Temps = 0.00714492797852 ---> No tag found
+--------> Prise n°354
+Temps = 0.00722885131836 ---> No tag found
+--------> Prise n°355
+Temps = 0.00657796859741 ---> No tag found
+--------> Prise n°356
+Temps = 0.010488986969 ---> No tag found
+--------> Prise n°357
+Temps = 0.00690889358521 ---> No tag found
+--------> Prise n°358
+Temps = 0.00657200813293 ---> No tag found
+--------> Prise n°359
+Temps = 0.00700092315674 ---> No tag found
+--------> Prise n°360
+Temps = 0.00721907615662 ---> No tag found
+--------> Prise n°361
+Temps = 0.00646615028381 ---> No tag found
+--------> Prise n°362
+Temps = 0.00584197044373 ---> No tag found
+--------> Prise n°363
+Temps = 0.00659513473511 ---> No tag found
+--------> Prise n°364
+Temps = 0.00589203834534 ---> No tag found
+--------> Prise n°365
+Temps = 0.00624394416809 ---> No tag found
+--------> Prise n°366
+Temps = 0.00649499893188 ---> No tag found
+--------> Prise n°367
+Temps = 0.00984501838684 ---> No tag found
+--------> Prise n°368
+Temps = 0.00536680221558 ---> No tag found
+--------> Prise n°369
+Temps = 0.00632905960083 ---> No tag found
+--------> Prise n°370
+Temps = 0.00593590736389 ---> No tag found
+--------> Prise n°371
+Temps = 0.00633597373962 ---> No tag found
+--------> Prise n°372
+Temps = 0.00644302368164 ---> No tag found
+--------> Prise n°373
+Temps = 0.00584387779236 ---> No tag found
+--------> Prise n°374
+Temps = 0.00536298751831 ---> No tag found
+--------> Prise n°375
+Temps = 0.00615406036377 ---> No tag found
+--------> Prise n°376
+Temps = 0.00579404830933 ---> No tag found
+--------> Prise n°377
+Temps = 0.00596904754639 ---> No tag found
+--------> Prise n°378
+Temps = 0.00705695152283 ---> No tag found
+--------> Prise n°379
+Temps = 0.00568795204163 ---> No tag found
+--------> Prise n°380
+Temps = 0.00522613525391 ---> No tag found
+--------> Prise n°381
+Temps = 0.00614213943481 ---> No tag found
+--------> Prise n°382
+Temps = 0.00564694404602 ---> No tag found
+--------> Prise n°383
+Temps = 0.00606608390808 ---> No tag found
+--------> Prise n°384
+Temps = 0.00633311271667 ---> No tag found
+--------> Prise n°385
+Temps = 0.00579190254211 ---> No tag found
+--------> Prise n°386
+Temps = 0.00539398193359 ---> No tag found
+--------> Prise n°387
+Temps = 0.00641202926636 ---> No tag found
+--------> Prise n°388
+Temps = 0.00602912902832 ---> No tag found
+--------> Prise n°389
+Temps = 0.00670504570007 ---> No tag found
+--------> Prise n°390
+Temps = 0.00687980651855 ---> No tag found
+--------> Prise n°391
+Temps = 0.00626707077026 ---> No tag found
+--------> Prise n°392
+Temps = 0.00593304634094 ---> No tag found
+--------> Prise n°393
+Temps = 0.00687479972839 ---> No tag found
+--------> Prise n°394
+Temps = 0.00651097297668 ---> No tag found
+--------> Prise n°395
+Temps = 0.0071439743042 ---> No tag found
+--------> Prise n°396
+Temps = 0.00726103782654 ---> No tag found
+--------> Prise n°397
+Temps = 0.00662684440613 ---> No tag found
+--------> Prise n°398
+Temps = 0.00596117973328 ---> No tag found
+--------> Prise n°399
+Temps = 0.00689601898193 ---> No tag found
+--------> Prise n°400
+Temps = 0.00651407241821 ---> No tag found
+--------> Prise n°401
+Temps = 0.00678181648254 ---> No tag found
+--------> Prise n°402
+Temps = 0.00720906257629 ---> No tag found
+--------> Prise n°403
+Temps = 0.00654602050781 ---> No tag found
+--------> Prise n°404
+Temps = 0.00603485107422 ---> No tag found
+--------> Prise n°405
+Temps = 0.00681304931641 ---> No tag found
+--------> Prise n°406
+Temps = 0.00649213790894 ---> No tag found
+--------> Prise n°407
+Temps = 0.00678586959839 ---> No tag found
+--------> Prise n°408
+Temps = 0.00710082054138 ---> No tag found
+--------> Prise n°409
+Temps = 0.00651216506958 ---> No tag found
+--------> Prise n°410
+Temps = 0.00614094734192 ---> No tag found
+--------> Prise n°411
+Temps = 0.00700998306274 ---> No tag found
+--------> Prise n°412
+Temps = 0.00659704208374 ---> No tag found
+--------> Prise n°413
+Temps = 0.00714898109436 ---> No tag found
+--------> Prise n°414
+Temps = 0.00729608535767 ---> No tag found
+--------> Prise n°415
+Temps = 0.00662803649902 ---> No tag found
+--------> Prise n°416
+Temps = 0.00613808631897 ---> No tag found
+--------> Prise n°417
+Temps = 0.00709104537964 ---> No tag found
+--------> Prise n°418
+Temps = 0.0101161003113 ---> No tag found
+--------> Prise n°419
+Temps = 0.00690102577209 ---> No tag found
+--------> Prise n°420
+Temps = 0.00708818435669 ---> No tag found
+--------> Prise n°421
+Temps = 0.00665998458862 ---> No tag found
+--------> Prise n°422
+Temps = 0.00600695610046 ---> No tag found
+--------> Prise n°423
+Temps = 0.00712394714355 ---> No tag found
+--------> Prise n°424
+Temps = 0.0254349708557 ---> Tags found:[(0, 0)]
+--------> Prise n°425
+Temps = 0.00605201721191 ---> No tag found
+--------> Prise n°426
+Temps = 0.00619912147522 ---> No tag found
+--------> Prise n°427
+Temps = 0.0061719417572 ---> No tag found
+--------> Prise n°428
+Temps = 0.00641012191772 ---> No tag found
+--------> Prise n°429
+Temps = 0.00645899772644 ---> No tag found
+--------> Prise n°430
+Temps = 0.00625014305115 ---> No tag found
+--------> Prise n°431
+Temps = 0.00604104995728 ---> No tag found
+--------> Prise n°432
+Temps = 0.00615000724792 ---> No tag found
+--------> Prise n°433
+Temps = 0.00592494010925 ---> No tag found
+--------> Prise n°434
+Temps = 0.0253491401672 ---> Tags found:[(0, 0)]
+--------> Prise n°435
+Temps = 0.00619196891785 ---> No tag found
+--------> Prise n°436
+Temps = 0.00984597206116 ---> No tag found
+--------> Prise n°437
+Temps = 0.0273947715759 ---> Tags found:[(31, 0)]
+--------> Prise n°438
+Temps = 0.0264179706573 ---> Tags found:[(0, 1)]
+--------> Prise n°439
+Temps = 0.022066116333 ---> Tags found:[(320, 0)]
+--------> Prise n°440
+Temps = 0.0220558643341 ---> Tags found:[(416, 0)]
+--------> Prise n°441
+Temps = 0.00597095489502 ---> No tag found
+--------> Prise n°442
+Temps = 0.00580501556396 ---> No tag found
+--------> Prise n°443
+Temps = 0.0217750072479 ---> Tags found:[(0, 0)]
+--------> Prise n°444
+Temps = 0.0063738822937 ---> No tag found
+--------> Prise n°445
+Temps = 0.00603604316711 ---> No tag found
+--------> Prise n°446
+Temps = 0.00957918167114 ---> No tag found
+--------> Prise n°447
+Temps = 0.0227370262146 ---> Tags found:[(246, 0)]
+--------> Prise n°448
+Temps = 0.0218131542206 ---> Tags found:[(214, 11)]
+--------> Prise n°449
+Temps = 0.0267848968506 ---> Tags found:[(180, 1)]
+--------> Prise n°450
+Temps = 0.0140261650085 ---> No tag found
+--------> Prise n°451
+Temps = 0.0230588912964 ---> Tags found:[(0, 0)]
+--------> Prise n°452
+Temps = 0.0282559394836 ---> Tags found:[(256, 0)]
+--------> Prise n°453
+Temps = 0.00604915618896 ---> No tag found
+--------> Prise n°454
+Temps = 0.00615501403809 ---> No tag found
+--------> Prise n°455
+Temps = 0.00595808029175 ---> No tag found
+--------> Prise n°456
+Temps = 0.00709891319275 ---> No tag found
+--------> Prise n°457
+Temps = 0.00598692893982 ---> No tag found
+--------> Prise n°458
+Temps = 0.00602293014526 ---> No tag found
+--------> Prise n°459
+Temps = 0.0225009918213 ---> Tags found:[(0, 0)]
+--------> Prise n°460
+Temps = 0.0236990451813 ---> Tags found:[(0, 0)]
+--------> Prise n°461
+Temps = 0.0225231647491 ---> Tags found:[(432, 0)]
+--------> Prise n°462
+Temps = 0.0266659259796 ---> Tags found:[(0, 0)]
+--------> Prise n°463
+Temps = 0.0278978347778 ---> Tags found:[(0, 0)]
+--------> Prise n°464
+Temps = 0.00616598129272 ---> No tag found
+--------> Prise n°465
+Temps = 0.00623202323914 ---> No tag found
+--------> Prise n°466
+Temps = 0.00607585906982 ---> No tag found
+--------> Prise n°467
+Temps = 0.00624108314514 ---> No tag found
+--------> Prise n°468
+Temps = 0.00709509849548 ---> No tag found
+--------> Prise n°469
+Temps = 0.0060441493988 ---> No tag found
+--------> Prise n°470
+Temps = 0.0224480628967 ---> Tags found:[(416, 1)]
+--------> Prise n°471
+Temps = 0.00626611709595 ---> No tag found
+--------> Prise n°472
+Temps = 0.0224261283875 ---> Tags found:[(256, 1)]
+--------> Prise n°473
+Temps = 0.00632286071777 ---> No tag found
+--------> Prise n°474
+Temps = 0.0232818126678 ---> Tags found:[(0, 1)]
+--------> Prise n°475
+Temps = 0.0224452018738 ---> Tags found:[(416, 11)]
+--------> Prise n°476
+Temps = 0.0260751247406 ---> Tags found:[(0, 0)]
+--------> Prise n°477
+Temps = 0.0229279994965 ---> Tags found:[(0, 11)]
+--------> Prise n°478
+Temps = 0.00615811347961 ---> No tag found
+--------> Prise n°479
+Temps = 0.00627017021179 ---> No tag found
+--------> Prise n°480
+Temps = 0.00706005096436 ---> No tag found
+--------> Prise n°481
+Temps = 0.00630879402161 ---> No tag found
+--------> Prise n°482
+Temps = 0.0232272148132 ---> Tags found:[(0, 0)]
+--------> Prise n°483
+Temps = 0.00989413261414 ---> No tag found
+--------> Prise n°484
+Temps = 0.0233809947968 ---> Tags found:[(219, 0)]
+--------> Prise n°485
+Temps = 0.0227019786835 ---> Tags found:[(0, 0)]
+--------> Prise n°486
+Temps = 0.0109169483185 ---> No tag found
+--------> Prise n°487
+Temps = 0.00993299484253 ---> No tag found
+--------> Prise n°488
+Temps = 0.0131690502167 ---> No tag found
+--------> Prise n°489
+Temps = 0.00613212585449 ---> No tag found
+--------> Prise n°490
+Temps = 0.00995707511902 ---> No tag found
+--------> Prise n°491
+Temps = 0.0232400894165 ---> Tags found:[(0, 0)]
+--------> Prise n°492
+Temps = 0.0131940841675 ---> No tag found
+--------> Prise n°493
+Temps = 0.0099720954895 ---> No tag found
+--------> Prise n°494
+Temps = 0.00996994972229 ---> No tag found
+--------> Prise n°495
+Temps = 0.0101940631866 ---> No tag found
+--------> Prise n°496
+Temps = 0.010134935379 ---> No tag found
+--------> Prise n°497
+Temps = 0.00991201400757 ---> No tag found
+--------> Prise n°498
+Temps = 0.00974893569946 ---> No tag found
+--------> Prise n°499
+Temps = 0.00972700119019 ---> No tag found
+--------> Prise n°500
+Temps = 0.00611615180969 ---> No tag found
+--------> Prise n°501
+Temps = 0.00992488861084 ---> No tag found
+--------> Prise n°502
+Temps = 0.00983309745789 ---> No tag found
+--------> Prise n°503
+Temps = 0.00985503196716 ---> No tag found
+--------> Prise n°504
+Temps = 0.00986695289612 ---> No tag found
+--------> Prise n°505
+Temps = 0.00993895530701 ---> No tag found
+--------> Prise n°506
+Temps = 0.0101401805878 ---> No tag found
+--------> Prise n°507
+Temps = 0.00991010665894 ---> No tag found
+--------> Prise n°508
+Temps = 0.00981211662292 ---> No tag found
+--------> Prise n°509
+Temps = 0.0226299762726 ---> Tags found:[(9, 0)]
+--------> Prise n°510
+Temps = 0.00995397567749 ---> No tag found
+--------> Prise n°511
+Temps = 0.00617408752441 ---> No tag found
+--------> Prise n°512
+Temps = 0.00993895530701 ---> No tag found
+--------> Prise n°513
+Temps = 0.00988292694092 ---> No tag found
+--------> Prise n°514
+Temps = 0.00993704795837 ---> No tag found
+--------> Prise n°515
+Temps = 0.0288939476013 ---> Tags found:[(0, 0)]
+--------> Prise n°516
+Temps = 0.00995087623596 ---> No tag found
+--------> Prise n°517
+Temps = 0.0230720043182 ---> Tags found:[(0, 0)]
+--------> Prise n°518
+Temps = 0.00991702079773 ---> No tag found
+--------> Prise n°519
+Temps = 0.00978994369507 ---> No tag found
+--------> Prise n°520
+Temps = 0.00640106201172 ---> No tag found
+--------> Prise n°521
+Temps = 0.0100700855255 ---> No tag found
+--------> Prise n°522
+Temps = 0.00734305381775 ---> No tag found
+--------> Prise n°523
+Temps = 0.00641918182373 ---> No tag found
+--------> Prise n°524
+Temps = 0.00651001930237 ---> No tag found
+--------> Prise n°525
+Temps = 0.00633192062378 ---> No tag found
+--------> Prise n°526
+Temps = 0.00645899772644 ---> No tag found
+--------> Prise n°527
+Temps = 0.00632309913635 ---> No tag found
+--------> Prise n°528
+Temps = 0.00634908676147 ---> No tag found
+--------> Prise n°529
+Temps = 0.00636506080627 ---> No tag found
+--------> Prise n°530
+Temps = 0.00637197494507 ---> No tag found
+--------> Prise n°531
+Temps = 0.00654792785645 ---> No tag found
+--------> Prise n°532
+Temps = 0.00646710395813 ---> No tag found
+--------> Prise n°533
+Temps = 0.00650191307068 ---> No tag found
+--------> Prise n°534
+Temps = 0.00643277168274 ---> No tag found
+--------> Prise n°535
+Temps = 0.00673699378967 ---> No tag found
+--------> Prise n°536
+Temps = 0.00667881965637 ---> No tag found
+--------> Prise n°537
+Temps = 0.00640106201172 ---> No tag found
+--------> Prise n°538
+Temps = 0.00646805763245 ---> No tag found
+--------> Prise n°539
+Temps = 0.00657105445862 ---> No tag found
+--------> Prise n°540
+Temps = 0.00648903846741 ---> No tag found
+--------> Prise n°541
+Temps = 0.00633788108826 ---> No tag found
+--------> Prise n°542
+Temps = 0.00630903244019 ---> No tag found
+--------> Prise n°543
+Temps = 0.00619101524353 ---> No tag found
+--------> Prise n°544
+Temps = 0.00648999214172 ---> No tag found
+--------> Prise n°545
+Temps = 0.00622892379761 ---> No tag found
+--------> Prise n°546
+Temps = 0.00606083869934 ---> No tag found
+--------> Prise n°547
+Temps = 0.00623893737793 ---> No tag found
+--------> Prise n°548
+Temps = 0.00612282752991 ---> No tag found
+--------> Prise n°549
+Temps = 0.0062050819397 ---> No tag found
+--------> Prise n°550
+Temps = 0.00610399246216 ---> No tag found
+--------> Prise n°551
+Temps = 0.00609493255615 ---> No tag found
+--------> Prise n°552
+Temps = 0.00611114501953 ---> No tag found
+--------> Prise n°553
+Temps = 0.0060760974884 ---> No tag found
+--------> Prise n°554
+Temps = 0.00607085227966 ---> No tag found
+--------> Prise n°555
+Temps = 0.00539207458496 ---> No tag found
+--------> Prise n°556
+Temps = 0.00650215148926 ---> No tag found
+--------> Prise n°557
+Temps = 0.00612497329712 ---> No tag found
+--------> Prise n°558
+Temps = 0.00609707832336 ---> No tag found
+--------> Prise n°559
+Temps = 0.00601887702942 ---> No tag found
+--------> Prise n°560
+Temps = 0.00614714622498 ---> No tag found
+--------> Prise n°561
+Temps = 0.00617384910583 ---> No tag found
+--------> Prise n°562
+Temps = 0.0061628818512 ---> No tag found
+--------> Prise n°563
+Temps = 0.00610399246216 ---> No tag found
+--------> Prise n°564
+Temps = 0.00606083869934 ---> No tag found
+--------> Prise n°565
+Temps = 0.00607013702393 ---> No tag found
+--------> Prise n°566
+Temps = 0.0062141418457 ---> No tag found
+--------> Prise n°567
+Temps = 0.00655317306519 ---> No tag found
+--------> Prise n°568
+Temps = 0.00619697570801 ---> No tag found
+--------> Prise n°569
+Temps = 0.00610995292664 ---> No tag found
+--------> Prise n°570
+Temps = 0.00615286827087 ---> No tag found
+--------> Prise n°571
+Temps = 0.00615882873535 ---> No tag found
+--------> Prise n°572
+Temps = 0.00609588623047 ---> No tag found
+--------> Prise n°573
+Temps = 0.00595688819885 ---> No tag found
+--------> Prise n°574
+Temps = 0.00608515739441 ---> No tag found
+--------> Prise n°575
+Temps = 0.0060670375824 ---> No tag found
+--------> Prise n°576
+Temps = 0.00604891777039 ---> No tag found
+--------> Prise n°577
+Temps = 0.00605416297913 ---> No tag found
+--------> Prise n°578
+Temps = 0.00648093223572 ---> No tag found
+--------> Prise n°579
+Temps = 0.0060601234436 ---> No tag found
+--------> Prise n°580
+Temps = 0.00596809387207 ---> No tag found
+--------> Prise n°581
+Temps = 0.0060122013092 ---> No tag found
+--------> Prise n°582
+Temps = 0.00601077079773 ---> No tag found
+--------> Prise n°583
+Temps = 0.00602293014526 ---> No tag found
+--------> Prise n°584
+Temps = 0.00605702400208 ---> No tag found
+--------> Prise n°585
+Temps = 0.00610899925232 ---> No tag found
+--------> Prise n°586
+Temps = 0.00609707832336 ---> No tag found
+--------> Prise n°587
+Temps = 0.00610685348511 ---> No tag found
+--------> Prise n°588
+Temps = 0.00618314743042 ---> No tag found
+--------> Prise n°589
+Temps = 0.00647187232971 ---> No tag found
+--------> Prise n°590
+Temps = 0.00612306594849 ---> No tag found
+--------> Prise n°591
+Temps = 0.0060670375824 ---> No tag found
+--------> Prise n°592
+Temps = 0.00602579116821 ---> No tag found
+--------> Prise n°593
+Temps = 0.00609397888184 ---> No tag found
+--------> Prise n°594
+Temps = 0.006098985672 ---> No tag found
+--------> Prise n°595
+Temps = 0.00601410865784 ---> No tag found
+--------> Prise n°596
+Temps = 0.00608396530151 ---> No tag found
+--------> Prise n°597
+Temps = 0.00609111785889 ---> No tag found
+--------> Prise n°598
+Temps = 0.00617694854736 ---> No tag found
+--------> Prise n°599
+Temps = 0.00602912902832 ---> No tag found
+--------> Prise n°600
+Temps = 0.00731897354126 ---> No tag found
+--------> Prise n°601
+Temps = 0.00612092018127 ---> No tag found
+--------> Prise n°602
+Temps = 0.00617504119873 ---> No tag found
+--------> Prise n°603
+Temps = 0.00618600845337 ---> No tag found
+--------> Prise n°604
+Temps = 0.0062940120697 ---> No tag found
+--------> Prise n°605
+Temps = 0.00631523132324 ---> No tag found
+--------> Prise n°606
+Temps = 0.00614714622498 ---> No tag found
+--------> Prise n°607
+Temps = 0.00620794296265 ---> No tag found
+--------> Prise n°608
+Temps = 0.00617909431458 ---> No tag found
+--------> Prise n°609
+Temps = 0.00624799728394 ---> No tag found
+--------> Prise n°610
+Temps = 0.00625801086426 ---> No tag found
+--------> Prise n°611
+Temps = 0.00628900527954 ---> No tag found
+--------> Prise n°612
+Temps = 0.00604009628296 ---> No tag found
+--------> Prise n°613
+Temps = 0.00603413581848 ---> No tag found
+--------> Prise n°614
+Temps = 0.00594997406006 ---> No tag found
+--------> Prise n°615
+Temps = 0.00585389137268 ---> No tag found
+--------> Prise n°616
+Temps = 0.00607299804688 ---> No tag found
+--------> Prise n°617
+Temps = 0.00943279266357 ---> No tag found
+--------> Prise n°618
+Temps = 0.00941491127014 ---> No tag found
+--------> Prise n°619
+Temps = 0.00603818893433 ---> No tag found
+--------> Prise n°620
+Temps = 0.00598502159119 ---> No tag found
+--------> Prise n°621
+Temps = 0.00591397285461 ---> No tag found
+--------> Prise n°622
+Temps = 0.00616598129272 ---> No tag found
+--------> Prise n°623
+Temps = 0.0094530582428 ---> No tag found
+--------> Prise n°624
+Temps = 0.00595808029175 ---> No tag found
+--------> Prise n°625
+Temps = 0.00597906112671 ---> No tag found
+--------> Prise n°626
+Temps = 0.00601696968079 ---> No tag found
+--------> Prise n°627
+Temps = 0.00957989692688 ---> No tag found
+--------> Prise n°628
+Temps = 0.00959396362305 ---> No tag found
+--------> Prise n°629
+Temps = 0.00601696968079 ---> No tag found
+--------> Prise n°630
+Temps = 0.0101668834686 ---> No tag found
+--------> Prise n°631
+Temps = 0.00991010665894 ---> No tag found
+--------> Prise n°632
+Temps = 0.00614595413208 ---> No tag found
+--------> Prise n°633
+Temps = 0.00625681877136 ---> No tag found
+--------> Prise n°634
+Temps = 0.00611877441406 ---> No tag found
+--------> Prise n°635
+Temps = 0.00622701644897 ---> No tag found
+--------> Prise n°636
+Temps = 0.00614905357361 ---> No tag found
+--------> Prise n°637
+Temps = 0.00606393814087 ---> No tag found
+--------> Prise n°638
+Temps = 0.00618195533752 ---> No tag found
+--------> Prise n°639
+Temps = 0.00632119178772 ---> No tag found
+--------> Prise n°640
+Temps = 0.00611305236816 ---> No tag found
+--------> Prise n°641
+Temps = 0.00618290901184 ---> No tag found
+--------> Prise n°642
+Temps = 0.00628519058228 ---> No tag found
+--------> Prise n°643
+Temps = 0.006422996521 ---> No tag found
+--------> Prise n°644
+Temps = 0.00975584983826 ---> No tag found
+--------> Prise n°645
+Temps = 0.00651502609253 ---> No tag found
+--------> Prise n°646
+Temps = 0.00673508644104 ---> No tag found
+--------> Prise n°647
+Temps = 0.00666093826294 ---> No tag found
+--------> Prise n°648
+Temps = 0.00665211677551 ---> No tag found
+--------> Prise n°649
+Temps = 0.0066511631012 ---> No tag found
+--------> Prise n°650
+Temps = 0.00658202171326 ---> No tag found
+--------> Prise n°651
+Temps = 0.00661993026733 ---> No tag found
+--------> Prise n°652
+Temps = 0.00636911392212 ---> No tag found
+--------> Prise n°653
+Temps = 0.00606489181519 ---> No tag found
+--------> Prise n°654
+Temps = 0.00612807273865 ---> No tag found
+--------> Prise n°655
+Temps = 0.0100378990173 ---> No tag found
+--------> Prise n°656
+Temps = 0.00640487670898 ---> No tag found
+--------> Prise n°657
+Temps = 0.00646686553955 ---> No tag found
+--------> Prise n°658
+Temps = 0.00663590431213 ---> No tag found
+--------> Prise n°659
+Temps = 0.00677490234375 ---> No tag found
+--------> Prise n°660
+Temps = 0.00635385513306 ---> No tag found
+--------> Prise n°661
+Temps = 0.00977206230164 ---> No tag found
+--------> Prise n°662
+Temps = 0.00982594490051 ---> No tag found
+--------> Prise n°663
+Temps = 0.00636005401611 ---> No tag found
+--------> Prise n°664
+Temps = 0.00642108917236 ---> No tag found
+--------> Prise n°665
+Temps = 0.00641989707947 ---> No tag found
+--------> Prise n°666
+Temps = 0.0055410861969 ---> No tag found
+--------> Prise n°667
+Temps = 0.00951814651489 ---> No tag found
+--------> Prise n°668
+Temps = 0.00627493858337 ---> No tag found
+--------> Prise n°669
+Temps = 0.00636506080627 ---> No tag found
+--------> Prise n°670
+Temps = 0.00662684440613 ---> No tag found
+--------> Prise n°671
+Temps = 0.00645518302917 ---> No tag found
+--------> Prise n°672
+Temps = 0.00964498519897 ---> No tag found
+--------> Prise n°673
+Temps = 0.00978899002075 ---> No tag found
+--------> Prise n°674
+Temps = 0.00959801673889 ---> No tag found
+--------> Prise n°675
+Temps = 0.00964498519897 ---> No tag found
+--------> Prise n°676
+Temps = 0.00987815856934 ---> No tag found
+--------> Prise n°677
+Temps = 0.00967788696289 ---> No tag found
+--------> Prise n°678
+Temps = 0.00600695610046 ---> No tag found
+--------> Prise n°679
+Temps = 0.00963592529297 ---> No tag found
+--------> Prise n°680
+Temps = 0.00949883460999 ---> No tag found
+--------> Prise n°681
+Temps = 0.009596824646 ---> No tag found
+--------> Prise n°682
+Temps = 0.00939202308655 ---> No tag found
+--------> Prise n°683
+Temps = 0.00608897209167 ---> No tag found
+--------> Prise n°684
+Temps = 0.00624918937683 ---> No tag found
+--------> Prise n°685
+Temps = 0.0061469078064 ---> No tag found
+--------> Prise n°686
+Temps = 0.00972318649292 ---> No tag found
+--------> Prise n°687
+Temps = 0.00963091850281 ---> No tag found
+--------> Prise n°688
+Temps = 0.00627088546753 ---> No tag found
+--------> Prise n°689
+Temps = 0.00605893135071 ---> No tag found
+--------> Prise n°690
+Temps = 0.00617599487305 ---> No tag found
+--------> Prise n°691
+Temps = 0.0062620639801 ---> No tag found
+--------> Prise n°692
+Temps = 0.00625491142273 ---> No tag found
+--------> Prise n°693
+Temps = 0.00627207756042 ---> No tag found
+--------> Prise n°694
+Temps = 0.00958490371704 ---> No tag found
+--------> Prise n°695
+Temps = 0.00604796409607 ---> No tag found
+--------> Prise n°696
+Temps = 0.00601601600647 ---> No tag found
+--------> Prise n°697
+Temps = 0.00616097450256 ---> No tag found
+--------> Prise n°698
+Temps = 0.0096230506897 ---> No tag found
+--------> Prise n°699
+Temps = 0.00960302352905 ---> No tag found
+--------> Prise n°700
+Temps = 0.00596284866333 ---> No tag found
+--------> Prise n°701
+Temps = 0.00617909431458 ---> No tag found
+--------> Prise n°702
+Temps = 0.00616884231567 ---> No tag found
+--------> Prise n°703
+Temps = 0.00958704948425 ---> No tag found
+--------> Prise n°704
+Temps = 0.00632405281067 ---> No tag found
+--------> Prise n°705
+Temps = 0.00631093978882 ---> No tag found
+--------> Prise n°706
+Temps = 0.00963306427002 ---> No tag found
+--------> Prise n°707
+Temps = 0.00970005989075 ---> No tag found
+--------> Prise n°708
+Temps = 0.00633716583252 ---> No tag found
+--------> Prise n°709
+Temps = 0.00656008720398 ---> No tag found
+--------> Prise n°710
+Temps = 0.00640892982483 ---> No tag found
+--------> Prise n°711
+Temps = 0.00943398475647 ---> No tag found
+--------> Prise n°712
+Temps = 0.00632190704346 ---> No tag found
+--------> Prise n°713
+Temps = 0.00646018981934 ---> No tag found
+--------> Prise n°714
+Temps = 0.00629806518555 ---> No tag found
+--------> Prise n°715
+Temps = 0.00618290901184 ---> No tag found
+--------> Prise n°716
+Temps = 0.00644993782043 ---> No tag found
+--------> Prise n°717
+Temps = 0.0061149597168 ---> No tag found
+--------> Prise n°718
+Temps = 0.00624299049377 ---> No tag found
+--------> Prise n°719
+Temps = 0.00607395172119 ---> No tag found
+--------> Prise n°720
+Temps = 0.00613784790039 ---> No tag found
+--------> Prise n°721
+Temps = 0.00595903396606 ---> No tag found
+--------> Prise n°722
+Temps = 0.00588703155518 ---> No tag found
+--------> Prise n°723
+Temps = 0.00607490539551 ---> No tag found
+--------> Prise n°724
+Temps = 0.00616407394409 ---> No tag found
+--------> Prise n°725
+Temps = 0.00608706474304 ---> No tag found
+--------> Prise n°726
+Temps = 0.00655293464661 ---> No tag found
+--------> Prise n°727
+Temps = 0.00672912597656 ---> No tag found
+--------> Prise n°728
+Temps = 0.00666403770447 ---> No tag found
+--------> Prise n°729
+Temps = 0.00700712203979 ---> No tag found
+--------> Prise n°730
+Temps = 0.00730490684509 ---> No tag found
+--------> Prise n°731
+Temps = 0.00740790367126 ---> No tag found
+--------> Prise n°732
+Temps = 0.00724411010742 ---> No tag found
+--------> Prise n°733
+Temps = 0.0092978477478 ---> No tag found
+--------> Prise n°734
+Temps = 0.00686407089233 ---> No tag found
+--------> Prise n°735
+Temps = 0.00714302062988 ---> No tag found
+--------> Prise n°736
+Temps = 0.00726199150085 ---> No tag found
+--------> Prise n°737
+Temps = 0.00673985481262 ---> No tag found
+--------> Prise n°738
+Temps = 0.00700378417969 ---> No tag found
+--------> Prise n°739
+Temps = 0.00682187080383 ---> No tag found
+--------> Prise n°740
+Temps = 0.00645995140076 ---> No tag found
+--------> Prise n°741
+Temps = 0.00660705566406 ---> No tag found
+--------> Prise n°742
+Temps = 0.00656890869141 ---> No tag found
+--------> Prise n°743
+Temps = 0.00641989707947 ---> No tag found
+--------> Prise n°744
+Temps = 0.00932502746582 ---> No tag found
+--------> Prise n°745
+Temps = 0.00658798217773 ---> No tag found
+--------> Prise n°746
+Temps = 0.00628590583801 ---> No tag found
+--------> Prise n°747
+Temps = 0.00589108467102 ---> No tag found
+--------> Prise n°748
+Temps = 0.00606799125671 ---> No tag found
+--------> Prise n°749
+Temps = 0.0066499710083 ---> No tag found
+--------> Prise n°750
+Temps = 0.00654196739197 ---> No tag found
+--------> Prise n°751
+Temps = 0.00655603408813 ---> No tag found
+--------> Prise n°752
+Temps = 0.00659489631653 ---> No tag found
+--------> Prise n°753
+Temps = 0.00629782676697 ---> No tag found
+--------> Prise n°754
+Temps = 0.00630378723145 ---> No tag found
+--------> Prise n°755
+Temps = 0.00932192802429 ---> No tag found
+--------> Prise n°756
+Temps = 0.00624799728394 ---> No tag found
+--------> Prise n°757
+Temps = 0.00632286071777 ---> No tag found
+--------> Prise n°758
+Temps = 0.00625920295715 ---> No tag found
+--------> Prise n°759
+Temps = 0.00629806518555 ---> No tag found
+--------> Prise n°760
+Temps = 0.0061731338501 ---> No tag found
+--------> Prise n°761
+Temps = 0.00621795654297 ---> No tag found
+--------> Prise n°762
+Temps = 0.00617599487305 ---> No tag found
+--------> Prise n°763
+Temps = 0.00634384155273 ---> No tag found
+--------> Prise n°764
+Temps = 0.00636100769043 ---> No tag found
+--------> Prise n°765
+Temps = 0.00627303123474 ---> No tag found
+--------> Prise n°766
+Temps = 0.00586891174316 ---> No tag found
+--------> Prise n°767
+Temps = 0.00633215904236 ---> No tag found
+--------> Prise n°768
+Temps = 0.00628209114075 ---> No tag found
+--------> Prise n°769
+Temps = 0.00627303123474 ---> No tag found
+--------> Prise n°770
+Temps = 0.00625610351562 ---> No tag found
+--------> Prise n°771
+Temps = 0.00635290145874 ---> No tag found
+--------> Prise n°772
+Temps = 0.00971794128418 ---> No tag found
+--------> Prise n°773
+Temps = 0.00982785224915 ---> No tag found
+--------> Prise n°774
+Temps = 0.00968480110168 ---> No tag found
+--------> Prise n°775
+Temps = 0.0131988525391 ---> No tag found
+--------> Prise n°776
+Temps = 0.00977301597595 ---> No tag found
+--------> Prise n°777
+Temps = 0.00570011138916 ---> No tag found
+--------> Prise n°778
+Temps = 0.00936579704285 ---> No tag found
+--------> Prise n°779
+Temps = 0.0107560157776 ---> No tag found
+--------> Prise n°780
+Temps = 0.00971698760986 ---> No tag found
+--------> Prise n°781
+Temps = 0.00959491729736 ---> No tag found
+--------> Prise n°782
+Temps = 0.00619697570801 ---> No tag found
+--------> Prise n°783
+Temps = 0.00966477394104 ---> No tag found
+--------> Prise n°784
+Temps = 0.00961899757385 ---> No tag found
+--------> Prise n°785
+Temps = 0.00962400436401 ---> No tag found
+--------> Prise n°786
+Temps = 0.00958895683289 ---> No tag found
+--------> Prise n°787
+Temps = 0.00972509384155 ---> No tag found
+--------> Prise n°788
+Temps = 0.00970005989075 ---> No tag found
+--------> Prise n°789
+Temps = 0.00599503517151 ---> No tag found
+--------> Prise n°790
+Temps = 0.00957918167114 ---> No tag found
+--------> Prise n°791
+Temps = 0.00964903831482 ---> No tag found
+--------> Prise n°792
+Temps = 0.00970888137817 ---> No tag found
+--------> Prise n°793
+Temps = 0.00974297523499 ---> No tag found
+--------> Prise n°794
+Temps = 0.00978088378906 ---> No tag found
+--------> Prise n°795
+Temps = 0.0130019187927 ---> No tag found
+--------> Prise n°796
+Temps = 0.00978016853333 ---> No tag found
+--------> Prise n°797
+Temps = 0.00976395606995 ---> No tag found
+--------> Prise n°798
+Temps = 0.00977420806885 ---> No tag found
+--------> Prise n°799
+Temps = 0.00964498519897 ---> No tag found
+--------> Prise n°800
+Temps = 0.00601005554199 ---> No tag found
+--------> Prise n°801
+Temps = 0.00967288017273 ---> No tag found
+--------> Prise n°802
+Temps = 0.00972986221313 ---> No tag found
+--------> Prise n°803
+Temps = 0.00961303710938 ---> No tag found
+--------> Prise n°804
+Temps = 0.00959491729736 ---> No tag found
+--------> Prise n°805
+Temps = 0.00961804389954 ---> No tag found
+--------> Prise n°806
+Temps = 0.0111818313599 ---> No tag found
+--------> Prise n°807
+Temps = 0.00960397720337 ---> No tag found
+--------> Prise n°808
+Temps = 0.00956296920776 ---> No tag found
+--------> Prise n°809
+Temps = 0.0095911026001 ---> No tag found
+--------> Prise n°810
+Temps = 0.00609302520752 ---> No tag found
+--------> Prise n°811
+Temps = 0.00611805915833 ---> No tag found
+--------> Prise n°812
+Temps = 0.0097188949585 ---> No tag found
+--------> Prise n°813
+Temps = 0.00953412055969 ---> No tag found
+--------> Prise n°814
+Temps = 0.00610709190369 ---> No tag found
+--------> Prise n°815
+Temps = 0.00604701042175 ---> No tag found
+--------> Prise n°816
+Temps = 0.00608801841736 ---> No tag found
+--------> Prise n°817
+Temps = 0.00980186462402 ---> No tag found
+--------> Prise n°818
+Temps = 0.00959897041321 ---> No tag found
+--------> Prise n°819
+Temps = 0.00623488426208 ---> No tag found
+--------> Prise n°820
+Temps = 0.00622320175171 ---> No tag found
+--------> Prise n°821
+Temps = 0.00969791412354 ---> No tag found
+--------> Prise n°822
+Temps = 0.00617599487305 ---> No tag found
+--------> Prise n°823
+Temps = 0.0097188949585 ---> No tag found
+--------> Prise n°824
+Temps = 0.00972390174866 ---> No tag found
+--------> Prise n°825
+Temps = 0.00940918922424 ---> No tag found
+--------> Prise n°826
+Temps = 0.00612688064575 ---> No tag found
+--------> Prise n°827
+Temps = 0.00970196723938 ---> No tag found
+--------> Prise n°828
+Temps = 0.00651597976685 ---> No tag found
+--------> Prise n°829
+Temps = 0.00662803649902 ---> No tag found
+--------> Prise n°830
+Temps = 0.0102198123932 ---> No tag found
+--------> Prise n°831
+Temps = 0.0101099014282 ---> No tag found
+--------> Prise n°832
+Temps = 0.0101749897003 ---> No tag found
+--------> Prise n°833
+Temps = 0.00600099563599 ---> No tag found
+--------> Prise n°834
+Temps = 0.0104877948761 ---> No tag found
+--------> Prise n°835
+Temps = 0.013209104538 ---> No tag found
+--------> Prise n°836
+Temps = 0.0153391361237 ---> No tag found
+--------> Prise n°837
+Temps = 0.0133609771729 ---> No tag found
+--------> Prise n°838
+Temps = 0.0135328769684 ---> No tag found
+--------> Prise n°839
+Temps = 0.0100548267365 ---> No tag found
+--------> Prise n°840
+Temps = 0.0101380348206 ---> No tag found
+--------> Prise n°841
+Temps = 0.0133619308472 ---> No tag found
+--------> Prise n°842
+Temps = 0.0100538730621 ---> No tag found
+--------> Prise n°843
+Temps = 0.010097026825 ---> No tag found
+--------> Prise n°844
+Temps = 0.00615286827087 ---> No tag found
+--------> Prise n°845
+Temps = 0.00654411315918 ---> No tag found
+--------> Prise n°846
+Temps = 0.0131540298462 ---> No tag found
+--------> Prise n°847
+Temps = 0.00658297538757 ---> No tag found
+--------> Prise n°848
+Temps = 0.00993680953979 ---> No tag found
+--------> Prise n°849
+Temps = 0.0100810527802 ---> No tag found
+--------> Prise n°850
+Temps = 0.0132739543915 ---> No tag found
+--------> Prise n°851
+Temps = 0.0101840496063 ---> No tag found
+--------> Prise n°852
+Temps = 0.0133140087128 ---> No tag found
+--------> Prise n°853
+Temps = 0.0133202075958 ---> No tag found
+--------> Prise n°854
+Temps = 0.0133109092712 ---> No tag found
+--------> Prise n°855
+Temps = 0.00624799728394 ---> No tag found
+--------> Prise n°856
+Temps = 0.0133898258209 ---> No tag found
+--------> Prise n°857
+Temps = 0.0133938789368 ---> No tag found
+--------> Prise n°858
+Temps = 0.0134971141815 ---> No tag found
+--------> Prise n°859
+Temps = 0.0101609230042 ---> No tag found
+--------> Prise n°860
+Temps = 0.0268669128418 ---> Tags found:[(0, 0)]
+--------> Prise n°861
+Temps = 0.0288050174713 ---> Tags found:[(1, 0)]
+--------> Prise n°862
+Temps = 0.0101249217987 ---> No tag found
+--------> Prise n°863
+Temps = 0.0280339717865 ---> Tags found:[(1, 0)]
+--------> Prise n°864
+Temps = 0.0142529010773 ---> No tag found
+--------> Prise n°865
+Temps = 0.0280799865723 ---> Tags found:[(0, 0)]
+--------> Prise n°866
+Temps = 0.00638699531555 ---> No tag found
+--------> Prise n°867
+Temps = 0.0279810428619 ---> Tags found:[(385, 0)]
+--------> Prise n°868
+Temps = 0.0280029773712 ---> Tags found:[(65, 0)]
+--------> Prise n°869
+Temps = 0.0277190208435 ---> Tags found:[(65, 0)]
+--------> Prise n°870
+Temps = 0.0286631584167 ---> Tags found:[(449, 0)]
+--------> Prise n°871
+Temps = 0.0175950527191 ---> No tag found
+--------> Prise n°872
+Temps = 0.031317949295 ---> Tags found:[(65, 0)]
+--------> Prise n°873
+Temps = 0.0228319168091 ---> Tags found:[(0, 0)]
+--------> Prise n°874
+Temps = 0.0298500061035 ---> Tags found:[(0, 11)]
+--------> Prise n°875
+Temps = 0.0261991024017 ---> Tags found:[(0, 0)]
+--------> Prise n°876
+Temps = 0.0144059658051 ---> No tag found
+--------> Prise n°877
+Temps = 0.0097827911377 ---> No tag found
+--------> Prise n°878
+Temps = 0.0144710540771 ---> No tag found
+--------> Prise n°879
+Temps = 0.0273430347443 ---> Tags found:[(1, 0)]
+--------> Prise n°880
+Temps = 0.0222139358521 ---> Tags found:[(31, 0)]
+--------> Prise n°881
+Temps = 0.0234479904175 ---> Tags found:[(0, 0)]
+--------> Prise n°882
+Temps = 0.0108258724213 ---> No tag found
+--------> Prise n°883
+Temps = 0.00625109672546 ---> No tag found
+--------> Prise n°884
+Temps = 0.00625705718994 ---> No tag found
+--------> Prise n°885
+Temps = 0.0225939750671 ---> Tags found:[(510, 0)]
+--------> Prise n°886
+Temps = 0.00630307197571 ---> No tag found
+--------> Prise n°887
+Temps = 0.00628018379211 ---> No tag found
+--------> Prise n°888
+Temps = 0.00570106506348 ---> No tag found
+--------> Prise n°889
+Temps = 0.00967192649841 ---> No tag found
+--------> Prise n°890
+Temps = 0.00624108314514 ---> No tag found
+--------> Prise n°891
+Temps = 0.0132668018341 ---> No tag found
+--------> Prise n°892
+Temps = 0.0128791332245 ---> No tag found
+--------> Prise n°893
+Temps = 0.0270040035248 ---> Tags found:[(1, 0)]
+--------> Prise n°894
+Temps = 0.0063328742981 ---> No tag found
+--------> Prise n°895
+Temps = 0.00623989105225 ---> No tag found
+--------> Prise n°896
+Temps = 0.00613617897034 ---> No tag found
+--------> Prise n°897
+Temps = 0.0129990577698 ---> No tag found
+--------> Prise n°898
+Temps = 0.00619506835938 ---> No tag found
+--------> Prise n°899
+Temps = 0.00607800483704 ---> No tag found
+--------> Prise n°900
+Temps = 0.0096869468689 ---> No tag found
+--------> Prise n°901
+Temps = 0.00602602958679 ---> No tag found
+--------> Prise n°902
+Temps = 0.00613498687744 ---> No tag found
+--------> Prise n°903
+Temps = 0.00615406036377 ---> No tag found
+--------> Prise n°904
+Temps = 0.00595283508301 ---> No tag found
+--------> Prise n°905
+Temps = 0.00616407394409 ---> No tag found
+--------> Prise n°906
+Temps = 0.00962495803833 ---> No tag found
+--------> Prise n°907
+Temps = 0.00619077682495 ---> No tag found
+--------> Prise n°908
+Temps = 0.00603795051575 ---> No tag found
+--------> Prise n°909
+Temps = 0.0062210559845 ---> No tag found
+--------> Prise n°910
+Temps = 0.00628304481506 ---> No tag found
+--------> Prise n°911
+Temps = 0.0097131729126 ---> No tag found
+--------> Prise n°912
+Temps = 0.0062050819397 ---> No tag found
+--------> Prise n°913
+Temps = 0.00610208511353 ---> No tag found
+--------> Prise n°914
+Temps = 0.00547504425049 ---> No tag found
+--------> Prise n°915
+Temps = 0.00966286659241 ---> No tag found
+--------> Prise n°916
+Temps = 0.00619602203369 ---> No tag found
+--------> Prise n°917
+Temps = 0.00625801086426 ---> No tag found
+--------> Prise n°918
+Temps = 0.00625801086426 ---> No tag found
+--------> Prise n°919
+Temps = 0.00626802444458 ---> No tag found
+--------> Prise n°920
+Temps = 0.00636291503906 ---> No tag found
+--------> Prise n°921
+Temps = 0.00616598129272 ---> No tag found
+Fin Prise

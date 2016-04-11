@@ -9,7 +9,8 @@ import test_pc_detect as td
 import generePlots as plt
 
 """ Testing the robot's launch """
-td.takeVideo()
+#td.takeVideo()
+td.test_images()
 #td.testImgFile(FNAME)
 
 """ Trying to re-generate and save the plot corresponding to what was tested """

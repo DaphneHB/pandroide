@@ -1,0 +1,118 @@
+
+ Prises du 2016-04-11_00h08min01sec (avec find contours) sur 50 itérations
+***Comparaison des filtres sur algos***
+--------> Prise n°1
+Temps = 0.220780134201 ---> No tag found
+--------> Prise n°2
+Temps = 0.209779977798 ---> No tag found
+--------> Prise n°3
+Temps = 0.209555149078 ---> No tag found
+--------> Prise n°4
+Temps = 0.215437889099 ---> No tag found
+	1 seconde écoulée : 4 images prises
+--------> Prise n°5
+Temps = 0.215698003769 ---> No tag found
+--------> Prise n°6
+Temps = 0.218722105026 ---> No tag found
+--------> Prise n°7
+Temps = 0.218259096146 ---> No tag found
+--------> Prise n°8
+Temps = 0.209427118301 ---> No tag found
+--------> Prise n°9
+Temps = 0.217493057251 ---> No tag found
+	1 seconde écoulée : 5 images prises
+--------> Prise n°10
+Temps = 0.216791152954 ---> No tag found
+--------> Prise n°11
+Temps = 0.208567142487 ---> No tag found
+--------> Prise n°12
+Temps = 0.408916950226 ---> No tag found
+--------> Prise n°13
+Temps = 0.454550981522 ---> Tags found:[(256, 0)]
+	1 seconde écoulée : 4 images prises
+--------> Prise n°14
+Temps = 0.453254938126 ---> Tags found:[(0, 11)]
+--------> Prise n°15
+Temps = 0.208817005157 ---> No tag found
+--------> Prise n°16
+Temps = 0.424430847168 ---> No tag found
+	1 seconde écoulée : 3 images prises
+--------> Prise n°17
+Temps = 0.32298707962 ---> No tag found
+--------> Prise n°18
+Temps = 0.418905973434 ---> No tag found
+--------> Prise n°19
+Temps = 0.325529098511 ---> No tag found
+	1 seconde écoulée : 3 images prises
+--------> Prise n°20
+Temps = 0.318659067154 ---> No tag found
+--------> Prise n°21
+Temps = 0.315202951431 ---> No tag found
+--------> Prise n°22
+Temps = 0.423732042313 ---> No tag found
+	1 seconde écoulée : 3 images prises
+--------> Prise n°23
+Temps = 0.419089078903 ---> No tag found
+--------> Prise n°24
+Temps = 0.314375162125 ---> No tag found
+--------> Prise n°25
+Temps = 0.431370973587 ---> No tag found
+	1 seconde écoulée : 3 images prises
+--------> Prise n°26
+Temps = 0.42481303215 ---> No tag found
+--------> Prise n°27
+Temps = 0.326965093613 ---> No tag found
+--------> Prise n°28
+Temps = 0.428265094757 ---> No tag found
+	1 seconde écoulée : 3 images prises
+--------> Prise n°29
+Temps = 0.459593057632 ---> Tags found:[(256, 1)]
+--------> Prise n°30
+Temps = 0.437542915344 ---> Tags found:[(0, 0)]
+--------> Prise n°31
+Temps = 0.332948923111 ---> Tags found:[(0, 0)]
+	1 seconde écoulée : 3 images prises
+--------> Prise n°32
+Temps = 0.421870946884 ---> No tag found
+--------> Prise n°33
+Temps = 0.41995382309 ---> No tag found
+--------> Prise n°34
+Temps = 0.433629989624 ---> No tag found
+	1 seconde écoulée : 3 images prises
+--------> Prise n°35
+Temps = 0.418002843857 ---> No tag found
+--------> Prise n°36
+Temps = 0.422021150589 ---> No tag found
+--------> Prise n°37
+Temps = 0.527343034744 ---> No tag found
+	1 seconde écoulée : 3 images prises
+--------> Prise n°38
+Temps = 0.529472112656 ---> No tag found
+--------> Prise n°39
+Temps = 0.418259143829 ---> No tag found
+--------> Prise n°40
+Temps = 0.216056108475 ---> No tag found
+	1 seconde écoulée : 3 images prises
+--------> Prise n°41
+Temps = 0.320410013199 ---> No tag found
+--------> Prise n°42
+Temps = 0.317562103271 ---> No tag found
+--------> Prise n°43
+Temps = 0.421530008316 ---> No tag found
+	1 seconde écoulée : 3 images prises
+--------> Prise n°44
+Temps = 0.314520120621 ---> No tag found
+--------> Prise n°45
+Temps = 0.208224058151 ---> No tag found
+--------> Prise n°46
+Temps = 0.213124990463 ---> No tag found
+--------> Prise n°47
+Temps = 0.212994813919 ---> No tag found
+--------> Prise n°48
+Temps = 0.207563877106 ---> No tag found
+	1 seconde écoulée : 5 images prises
+--------> Prise n°49
+Temps = 0.208057880402 ---> No tag found
+--------> Prise n°50
+Temps = 0.208219051361 ---> No tag found
+Fin Prise

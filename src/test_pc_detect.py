@@ -6,7 +6,7 @@
 
 # import the necessary packages
 import cv2
-import time, datetime
+import time, datetime, os
 # from our files
 import tools
 import found_tag_box as tg
@@ -36,13 +36,59 @@ def take_images():
         key = cv2.waitKey(1) & 0xFF
 
         # if the `q` key was pressed, break from the loop
-        if key == ord("q") or i >= tools.ITERATIONS:
+        if key == ord("q") or i >= 1000:
             break
     # end with
     print "\nFin prise"
     # When everything done, release the capture
     # camera.stop_preview()
     cv2.destroyAllWindows()
+
+
+def test_images():
+    ststr = datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%Hh%Mmin%Ssec')
+    string="\n Prises du {} \n".format(ststr)
+    string+="***Calculs des true/false-positives/negatives***"
+    print "\nDébut tests"
+    nbImgSec = 0
+    st = time.time()
+    accepted = [(3,"10"),(12,"10"),(10,"00"),(0,"00")]
+    list_img = sorted(os.listdir(tools.IMG_PATH))
+    for i,img_name in enumerate(list_img):
+        img = cv2.imread(tools.IMG_PATH+img_name)
+        nbImgSec += 1
+        string += "\n--------> Prise n°{}".format(i)
+
+        dt = time.time()
+        results = tg.found_tag_img(img)
+        ft = time.time()
+        tps = "\nTemps = " + str(ft - dt)
+        if results == []:
+            tps += " ---> No tag found"
+        else:
+            tps += " ---> Tags found:" + str(results)
+        #print "Résultats image",i," = ", results
+        string += str(tps)
+        if results == []:
+            tools.FALSE_NEG+=1
+        else:
+            if not any([x in accepted for x in results]):
+                # there is no good one
+                tools.FALSE_NEG+=1
+            else:
+                tools.TRUE_POS+=1
+        if cv2.waitKey(1) & 0XFF == ord('q'):
+            break
+        if (dt - st >= 1):
+            string += "\n\t1 seconde écoulée : {} images prises".format(nbImgSec)
+            st = time.time()
+            nbImgSec = 0
+
+    #print list_img
+    cv2.destroyAllWindows()
+    io.writeOutputFile(string)
+
+    print "\nFin tests"
 
 
 def takeVideo():

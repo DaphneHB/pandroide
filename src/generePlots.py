@@ -6,7 +6,6 @@ Created on Fri Apr  8 14:53:58 2016
 """
 import tools
 import matplotlib.pyplot as plt
-import plotly.plotly as py
 
 
 def boxPlotBestTime():
@@ -42,7 +41,7 @@ def plotBestTime():
     #plt.show()
 
 def results_pie_chart():
-    if tools.TRUE_NEG==[] or tools.TRUE_POS==[] or tools.FALSE_NEG==[] or tools.FALSE_POS:
+    if tools.TRUE_NEG==0 and tools.TRUE_POS==0 and tools.FALSE_NEG==0 and tools.FALSE_POS==0:
         print "Pie chart of results not generated"
         return None
     # The slices will be ordered and plotted counter-clockwise.

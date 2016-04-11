@@ -81,7 +81,7 @@ Black-White threshold
 """
 
 
-def threshold_baw(img, seuil, reverse=False, with_otsu=False, adaptative=False):
+def thresholding(img, seuil, reverse=False, with_otsu=False, adaptative=False):
     if reverse:
         val = cv2.THRESH_BINARY_INV
     else:
@@ -100,58 +100,6 @@ def convoluer(img, mat=k_contraste):
     return cv2.filter2D(img, -1, mat)
 
 
-def match_features(img1, img2):
-    min_match_count = 10
-    ### TODO : best between SIFT & SURF &....
-    # Initiate SIFT detector
-    sift = cv2.SURF()
-
-    # find the keypoints and descriptors with SIFT
-    kp1, des1 = sift.detectAndCompute(img1, None)
-    kp2, des2 = sift.detectAndCompute(img2, None)
-
-    ### TODO : best between FLANN & BF
-    """ # FLANN
-    FLANN_INDEX_KDTREE = 0
-    index_params = dict(algorithm = FLANN_INDEX_KDTREE, trees = 5)
-    search_params = dict(checks = 50)
-    
-    flann = cv2.FlannBasedMatcher(index_params, search_params)
-    
-    matches = flann.knnMatch(des1,des2,k=2)
-    """
-
-    # BFMatcher with default params
-    bf = cv2.BFMatcher()
-    matches = bf.knnMatch(des1, des2, k=2)
-
-    # store all the good matches as per Lowe's ratio test.
-    good = []
-    for m, n in matches:
-        if m.distance < 0.7 * n.distance:
-            good.append(m)
-    if len(good) > min_match_count:
-        src_pts = np.float32([kp1[m.queryIdx].pt for m in good]).reshape(-1, 1, 2)
-        dst_pts = np.float32([kp2[m.trainIdx].pt for m in good]).reshape(-1, 1, 2)
-
-        M, mask = cv2.findHomography(src_pts, dst_pts, cv2.RANSAC, 5.0)
-        # matchesMask = mask.ravel().tolist()
-
-        h, w = img1.shape
-        pts = np.float32([[0, 0], [0, h - 1], [w - 1, h - 1], [w - 1, 0]]).reshape(-1, 1, 2)
-        dst = cv2.perspectiveTransform(pts, M)
-        print "DST : {}".format(dst)
-        cv2.polylines(img2, [np.int32(dst)], True, 255, 3)
-
-    else:
-        print "Not enough matches are found - %d/%d" % (len(good), min_match_count)
-        # matchesMask = None
-        return None
-    # img3 = drawMatches(img1,kp1,img2,kp2,good)#,None,**draw_params)
-
-    return img2
-
-
 def gradientSobelXY(img):
     gradX = cv2.Sobel(img, ddepth=cv2.cv.CV_32F, dx=1, dy=0, ksize=-1)
     gradY = cv2.Sobel(img, ddepth=cv2.cv.CV_32F, dx=0, dy=1, ksize=-1)
@@ -160,21 +108,10 @@ def gradientSobelXY(img):
     gradient = cv2.convertScaleAbs(gradient)
     return gradient
 
-
-def dilatation(img, it):
-    return cv2.dilate(img, None, iterations=it)
-
-
-def erosion(img, it):
-    return cv2.erode(img, None, iterations=it)
-
-
 """
 kind = 0:simple blur; 1:median blur; 2:gaussian blur
 Default : simple blur
 """
-
-
 def blurring(img, taille_kernel, kind=0):
     if kind == 0:
         return cv2.blur(img, (taille_kernel, taille_kernel), 0)
@@ -193,8 +130,6 @@ Opening <- remove white noise outside white object
 kind = 0:closing; 1:opening; 2:substraction between dilatation and erosion
 Default : closing
 """
-
-
 def morphology(img, taille_kernel, kind=0):
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (taille_kernel, taille_kernel))
     if kind == 0:
@@ -421,7 +356,7 @@ def is_real_tag(tag):
     Checking is the read tag really is a tag (not a window)
     Return True if the tag is a good one
     """
-    dt = time.time()
+    #dt = time.time()
     width, height = tag.shape
     height -= 1
     width -= 1
@@ -438,34 +373,35 @@ def is_real_tag(tag):
     lign1 = tag[0+supp:width*lign_per-supp,0+supp:height-supp]
     # retrieving the lower border
     lign2 = tag[width-width*lign_per+supp:width-supp,0+supp:height-supp]
+    """
     cv2.imshow("lign1", lign1)
     cv2.imshow("lign2", lign2)
     cv2.imshow("col1", col1)
     cv2.imshow("col2", col2)
     #cv2.waitKey(0)
-
+    """
     per1 = float(np.count_nonzero(lign1)) / (len(lign1) * len(lign1[0]))
     if not (per1 > 0.25 and per1 < 0.55):
-        print False, "per1", per1
+        #print False, "per1", per1
         return False
     per2 = float(np.count_nonzero(lign2)) / (len(lign2) * len(lign2[0]))
     if not (per2 > 0.25 and per2 < 0.55):
-        print False, "per2", per2
+        #print False, "per2", per2
         return False
     per3 = float(np.count_nonzero(col1)) / (len(col1) * len(col1[0]))
     if not (per3 > 0.25 and per3 < 0.55):
-        print False, "per3", per3
+        #print False, "per3", per3
         return False
     per4 = float(np.count_nonzero(col2)) / (len(col2) * len(col2[0]))
     if not (per4 > 0.25 and per4 < 0.55):
-        print False, "per4", per4
+        #print False, "per4", per4
         return False
-    print True
-    print per1, per2, per3, per4
+    #print True
+    #print per1, per2, per3, per4
 
     # time testing
-    ft = time.time()
-    print "Ca prend ", ft - dt
+    #ft = time.time()
+    #print "Ca prend ", ft - dt
     return True
 
 
@@ -478,7 +414,7 @@ def check_tags(gray, tagz_cont):
     views = list()
     # foreach contour found
     for cnt in tagz_cont:
-        # take the contour and compute its bounding box 
+        # take the contour and compute its bounding box
         # computing the min area bounding/fitting rect (even rotated)
         rect = cv2.minAreaRect(cnt)
         box = np.int0(cv2.cv.BoxPoints(rect))
@@ -486,24 +422,24 @@ def check_tags(gray, tagz_cont):
         # getting the translation of the tag
         tag = imgHomot(gray, box)
         # thresholding for a better use after
-        thresh = threshold_baw(tag,170)
-        cv2.imshow("found", tag)
-        time.sleep(0.1)
+        thresh = thresholding(tag, 170)
+        #cv2.imshow("found", tag)
+        #time.sleep(0.1)
         # the contour found isn't a tag
         if not is_real_tag(thresh):
             continue
         else:
-            IEME_TAG += 1
-            cv2.imwrite(IMG_PATH+"tag_view"+str(IEME_TAG)+".png",tag)
+            #IEME_TAG += 1
+            #cv2.imwrite(IMG_PATH+"tag_view"+str(IEME_TAG)+".png",tag)
             # else :
             # check the id, orientation and coordinates of the bot
             # reading the info in the tag
             data =  tagid.lecture_tag(tag)
+            #print "DATA ========== ",data
             if data is None:
                 continue
             # else : add them to the list views
-            print data
-            #views.append(data)
+            views.append(data)
     return views
 
 def apply_filters(img):

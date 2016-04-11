@@ -48,16 +48,17 @@ def coord_min_max(data_enfant):
 def extraction_id(img, data_enfant1):
     x1, y1, x2, y2 = coord_min_max(data_enfant1)
 
-    case_length = (x2 - x1) / nbCasesIdParCote
+    case_length = (x2 - x1) / tools.NB_ID_CASES_SIDE
     initial_point = x1 + case_length / 2
     # print "x1,y1 min : " ,x1 , " ",y1 , " x2,y2 max : " , x2, " " ,y2 , " case_length : ", case_length, ", pointInit: ", initial_point
     idRobot = 0
-    for coord in range(nbCasesIdParCote * nbCasesIdParCote):
-        deltaX = coord % nbCasesIdParCote
-        deltaY = coord / nbCasesIdParCote  # partie entiere
+    for coord in range(tools.NB_ID_CASES_SIDE*tools.NB_ID_CASES_SIDE):
+        deltaX = coord % tools.NB_ID_CASES_SIDE
+        deltaY = coord / tools.NB_ID_CASES_SIDE # partie entiere
         bitId = get_bit_pixel(img, initial_point + case_length * deltaY, initial_point + case_length * deltaX)
         idRobot = idRobot + np.math.pow(2, coord) * bitId
-    print "idRobot ", idRobot
+    #print "idRobot ", idRobot
+    return int(idRobot)
 
 
 # filter the duplicate coordonates defining children corners, return only 4 points
@@ -88,7 +89,8 @@ def extract_direction(img, data_enfant2):
     # img3 = cv2.filter2D(img2,-1,kernel)
     # print "coordGX ", coordGX , " coordDX ", coordDX, " coordMidY ", coordMidY , " y1 " , y1, " y2 " , y2, " img2 D " , img3[0][coordMidY]
     dirRobot = 10 * get_bit_pixel(img, coordMidY, coordGX) + get_bit_pixel(img, coordMidY, coordDX)
-    print "direction robot ", dirRobot, " Directions : ", get_direction(dirRobot)
+    #print "direction robot ", dirRobot, " Directions : ", get_direction(dirRobot)
+    return dirRobot
 
 
 def separate_children(hierarchy):
@@ -110,77 +112,27 @@ def separate_children(hierarchy):
 
 # extract id and direction of the robot based on the tag
 def obtain_tag_info(img, contours, hierarchy):
+    """
+    Return the tuple id (int), direction (string)
+    """
     idChild1, idChild2 = separate_children(hierarchy[0])
     datasEnfant1 = filter_duplicate(contours[idChild1])
     datasEnfant2 = filter_duplicate(contours[idChild2])
-    extraction_id(img, datasEnfant1)
-    extract_direction(img, datasEnfant2)
-
-def applyFiltre(img):
-    nimg = cv2.equalizeHist(img)
-    st = datetime.datetime.fromtimestamp(time.time()).strftime('%Y-%m-%d_%H:%M:%S')
-    #cv2.imwrite(tools.IMG_PATH+st+".png",nimg)
-    return nimg
-
+    id = extraction_id(img, datasEnfant1)
+    direct = extract_direction(img, datasEnfant2)
+    return id,direct
 
 def lecture_tag(tag_found):
     thresh = tools.apply_filters(tag_found)
     # extract hierarchy of the tag
-    cv2.imshow("lecture",thresh)
     contours, hierarchy = cv2.findContours(thresh.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
-    return None
-    """
-    # denoising the image
-    #equ = cv2.equalizeHist(tag_found)
-    blur = cv2.GaussianBlur(tag_found,(5,5),0)
-    # getting only black and white
-    thresh = cv2.adaptiveThreshold(blur,255,1,1,11,2)
-    kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (21, 7))
-    # used to reveal the rectangular region of the barcode and ignore the rest of the contents of the image
-    #closed = cv2.morphologyEx(thresh, cv2.MORPH_CLOSE, kernel)
-    # perform a series of erosions and dilations
-    #closed = cv2.dilate(closed, None, iterations = 1)
-    #closed = cv2.erode(closed, None, iterations = 1)
-    # marking contours
-    edges = cv2.Canny(thresh,100,200,L2gradient=True)
-    # finding all the contours
-    contours,hierarchy = cv2.findContours(edges,cv2.RETR_CCOMP,cv2.CHAIN_APPROX_SIMPLE)
-    # getting the two main contours (ID and orientation)
-    conts = []
-    # min size := the size percentage of the orientation block
-    min_size = thresh.size/20
-    for i,c in enumerate(contours):
-        area = cv2.contourArea(c)
-        # testing only the contour bigger than a simple block
-        if area>min_size:
-            # searching only for 4corners  polys
-            peri = cv2.arcLength(c,True)
-            approx = cv2.approxPolyDP(c,0.04*peri,True)
-            if len(approx)==4:
-                # getting only contours
-                # with a previous or(exclusive) a next
-                # and who's got a parent
-                if hierarchy[0,i,3]!=-1:#(bool(hierarchy[0,i,1]!=-1)!=bool(hierarchy[0,i,0]!=-1)) \
-                #and hierarchy[0,i,3]!=-1:
-                    # adding it to the important ones
-                    i = i
-                    parent = hierarchy[0,i,3]
-                    print "contour parent de  {} : {}".format(i,hierarchy[0,parent])
-                    conts.append(c)
-                    #conts.append(contours[parent])
-                # end if
-            # end if
-        # end if
-    # end for
-    cv2.drawContours(tag_found, conts, -1, (0, 255, 0), 4)
-
-    cv2.imshow("ma lect",thresh)
-    #return (identity,orientation)
-    """
+    res = obtain_tag_info(tag_found, contours, hierarchy)
+    return res
 
 """
 nbCasesIdParCote = 3
-tagName = tools.ABS_PATH_PRINC + '/data/tests/tag_dirNN.png'
+import constants as cst
+tagName = cst.IMG_PATH+"tag_view1.png"
 
 img2 = cv2.imread(tagName, 0)
 # img2 = cv2.imread('testAvecBordure1.png',0) # trainImage
@@ -195,5 +147,6 @@ ret, thresh = cv2.threshold(img3, 127, 255, 0)
 contours, hierarchy = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 
 # faire un find contour sur le tag extrait de la grosse image
-obtain_tag_info(img2, contours, hierarchy)
+t =obtain_tag_info(img2, contours, hierarchy)
+print "t = ",t
 """

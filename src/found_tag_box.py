@@ -15,16 +15,16 @@ def found_tag_img(img):
     # getting the corresponding tag box in complex image
     # getting the image in gray
     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-    time.sleep(0.2)
+    #time.sleep(0.2)
     ####### Our
     contours = getTagBox_vEmilias(gray)
     # on ferme toutes les autres fenetres et on affiche juste le tag trouvé
     # enregistrement des img filtrees
     # getting a simple image of the tag (only)
     if not contours is None:
-        gray3 = img.copy()
-        cv2.drawContours(gray3, contours, -1, (255, 0, 0), 4)
-        cv2.imshow("after filter emilias",gray3)
+        #gray3 = img.copy()
+        #cv2.drawContours(gray3, contours, -1, (255, 0, 0), 4)
+        #cv2.imshow("after filter emilias",gray3)
         # checking the tag
         robots_view = tools.check_tags(gray,contours)
         return robots_view

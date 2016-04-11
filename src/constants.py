@@ -16,10 +16,10 @@ TPS_ELIAS = []
 TPS_EMILIAS = []
 
 # to check result classification
-TRUE_POS = []
-TRUE_NEG = []
-FALSE_POS = []
-FALSE_NEG = []
+TRUE_POS = 0
+TRUE_NEG = 0
+FALSE_POS = 0
+FALSE_NEG = 0
 
 # constants
 ITERATIONS = 50
@@ -29,6 +29,7 @@ ABS_PATH_PRINC = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 IMG_PATH = ABS_PATH_PRINC + "/data/img/"
 PLOT_PATH = ABS_PATH_PRINC + "/data/plots/"
 FILE_PATH = ABS_PATH_PRINC + "/data/files/"
+TESTS_PATH = ABS_PATH_PRINC + "/data/tests/"
 
 HIERARCHY_TREE = cv2.RETR_CCOMP
 
@@ -38,6 +39,7 @@ SUPP_MARGIN = 10
 OCCLUSION_MARGIN = 1
 TAG_HEIGHT = 10.5
 TAG_WIDTH = 7.8
+NB_ID_CASES_SIDE = 3
 
 # different convolution matrix
 k_contraste = np.array([[0, 0, 0, 0, 0], [0, 0, -1, 0, 0], [0, -1, 5, -1, 0], [0, 0, -1, 0, 0], [0, 0, 0, 0, 0]])
