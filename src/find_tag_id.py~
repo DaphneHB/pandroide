@@ -71,6 +71,7 @@ def read_dir(tagDir):
     forgotten = int(height*0.30)
     # computation of the id
     dir_bot = ""
+    
     # getting a 0 and 1 array image
     tab = tagDir/255
     # foreach case of the direction area
@@ -138,13 +139,12 @@ def separate_children(hierarchy,img1, conts):
     peri_dad = (height+width)*2
     area_dad = height*width
     for i, h in enumerate(hierarchy):
-        cont = None
         img = tools.color_gray_img(img1,to_gray=False)
         next = h[0]
         prev = h[1]
         son = h[2]
-        dad = h[3]
-        if (next!=-1 or prev!=-1) and dad!=-1:
+        papa = h[3]
+        if (next!=-1 or prev!=-1) and son!=-1:
             # it is an interesting contour
             child, cont = tools.verifChild(h,conts[i], peri_dad,area_dad)
             # we'll take it
@@ -154,14 +154,11 @@ def separate_children(hierarchy,img1, conts):
             elif child==2:
                 idChild2 = i
                 cont_dir = cont
-        """
         print "sa hier ",h
         cv2.drawContours(img,[conts[i]],-1,(255,255,0),2)
         cv2.imshow("separation children",img)
-        if not cont is None:
-            cv2.imshow('part',get_part(img,cont))
         cv2.waitKey(0)
-        """
+        
     return (idChild1,cont_id), (idChild2,cont_dir)
 
 def get_part(img,contour):
@@ -197,21 +194,19 @@ def get_corners(contour,height,width):
     print type(contour[0][0]),contour[0,0], len(contour)
 
 def contour_min_max(contour):
-    """
-    Return the xmin ymin and xmax ymax values of the contour
-    """
-    #contour = np.array([x[0] for x in contour])
-    min_xy = contour[0,0]
-    max_xy = contour[2,0]
-    """
-    for i in range(1,len(contour)):
-    c = contour[i]
-    if c[0]<=min_xy[0] and c[1]<=min_xy[1]:
-    min_xy = c
-    if c[0]>=max_xy[0] and c[1]>=max_xy[1]:
-    max_xy = c
-    """
-    return min_xy, max_xy
+	"""
+	Return the xmin ymin and xmax ymax values of the contour
+	"""
+	contour = np.array([x[0] for x in contour])
+	min_xy = contour[0]
+	max_xy = contour[0]
+	for i in range(1,len(contour)):
+		c = contour[i]
+		if c[0]<=min_xy[0] and c[1]<=min_xy[1]:
+			min_xy = c
+		if c[0]>=max_xy[0] and c[1]>=max_xy[1]:
+			max_xy = c
+	return min_xy, max_xy
 
 def centroid(contour):
 	minxy,maxxy = contour_min_max(contour)
@@ -219,44 +214,33 @@ def centroid(contour):
 	midh = minxy[1]+((maxxy[1]-minxy[1])/2)
 	return midw,midh
 
-def compute_angle_distance(img,cont_tag,tag_size):
-    _,img_w = img.shape
-    tag_h,tag_w = tag_size
-    # computing the image reference center
-    midd_w = img_w/2
-    # getting the centroid of the id of the tag
-    tagx,_ = centroid(cont_tag)
-    """
-    print "dist min =",tools.DIST_MIN
-    print "height min = ",tools.HEIGHT_MIN
-    print "dist max =",tools.DIST_MAX
-    print "height max = ",tools.HEIGHT_MAX
-    print 'tag height = ', tag_h
-    print 'tag width = ', tag_w
-    """
-    # distance ("produit en croix")
-    dist = dist_h = tools.DIST_MIN*tools.HEIGHT_MIN/tag_h # theoreme 3D (DDD)
-    print "DISTANCE H = ",dist
-    print "DISTANCE W = ",tools.DIST_MIN*tools.WIDTH_MIN/tag_w
-    print "DISTANCE P = ",tools.DIST_MIN*(tools.HEIGHT_MIN+tools.WIDTH_MIN)/(tag_w+tag_h)
-    print "DISTANCE A = ",tools.DIST_MIN*(tools.HEIGHT_MIN*tools.WIDTH_MIN)/(tag_w*tag_h)
+def compute_angle_distance(img,cont_id,tag_size):
+	_,img_w = img.shape
+	tag_h,tag_w = tag_size
+	# computing the image reference center
+	midd_w = img_w/2
+	# getting the centroid of the id of the tag
+	tagx,_ = centroid(cont_id)
+	# distance ("produit en croix")
+	dist = dist_h = tools.DIST_MIN*tag_h/tools.HEIGHT_MIN # thales
+	print "DISTANCE H = ",dist
+	print "DISTANCE W = ",tools.DIST_MIN*tag_w/tools.WIDTH_MIN
+	print "DISTANCE P = ",tools.DIST_MIN*(tag_w+tag_h)/(tools.HEIGHT_MIN+tools.WIDTH_MIN)
+	print "DISTANCE A = ",tools.DIST_MIN*(tag_w*tag_h)/(tools.HEIGHT_MIN*tools.WIDTH_MIN)
+	
+	# TODO : distance du tag d'apres la hauteur, la largeur ou le perimetre ou une moyenne ou autre?
 
-    # TODO : distance du tag d'apres la hauteur, la largeur ou le perimetre ou une moyenne ou autre?
-    if dist == 0 :
-        return (0,0)
-    # angle <- trigonometry (sinus : opposite/hypothenusis)
-    # the distance from center line of the image to the tag centroid
-    pix_midd = fabs(tagx-midd_w) # opposite
-    dist_midd = pix_midd/tools.CM_PIX
-    print "MIDDLE =",dist_midd
-    print "ARCSIN_4 = ",asin(0.0001)
-    print "div = ",(dist_midd/float(dist))
-    angle = asin(dist_midd/float(dist))
-    deg = degrees(angle)
-    print "IN DEGREES = ",deg
-    cv2.imshow("truc",img)
-    cv2.waitKey(0)
-    return dist,angle
+	# angle <- trigonometry (sinus : opposite/hypothenusis)
+	# the distance from center line of the image to the tag centroid
+	pix_midd = fabs(tagx-midd_w) # opposite
+	dist_midd = pix_midd/tools.CM_PIX
+	print "MIDDLE =",dist_midd
+	print "ARCSIN_4 = ",asin(0.0001)
+	print "div = ",(dist_midd/float(dist))
+	angle = asin(dist_midd/float(dist))
+	deg = degrees(angle)
+	print "IN DEGREES = ",deg
+	return dist,angle
 	
 # extract id and direction of the robot based on the tag
 def obtain_tag_info(img, tag, contours, hierarchy, tag_cont):
@@ -295,11 +279,9 @@ def obtain_tag_info(img, tag, contours, hierarchy, tag_cont):
     """
     if tools.DIST_ANGLE:
         minxy, maxxy = contour_min_max(tag_cont)
-        print "contour tag ",tag_cont
-        print "min =",minxy," - max =",maxxy
         tag_size = (maxxy[1]-minxy[1],maxxy[0]-minxy[0])
         # retrieving the distance and the angle (in radian) from me
-        dist, angle = compute_angle_distance(img, tag_cont,tag_size)
+        dist, angle = compute_angle_distance(img, cont_id,tag_size)
         print "found distance = ",dist,"\nfound angle = ",angle
         return id_bot,direct, dist, angle
     else:
@@ -399,25 +381,16 @@ def lecture_tag(img,tag_found, tag_cont):
         return None
     print "\tIt's a real tag"
     # otherwhise, it is a real tag, we continue
-    dt = time.time()
-    #canny = tools.canny_lecture(tag)
-    gt = time.time()
-    thresh = tools.apply_filters(tag)
-    #print "temps thresh apply filter : ",time.time()-gt
-    #print 'temps canny apply filter : ',gt-dt
+    canny = tools.canny_lecture(tag)
+    # thresh = tools.apply_filters(tag)
     # thresh = cv2.erode(thresh, None, iterations = 1) # usefull?
     # extract hierarchy of the tag
-    #cv2.imshow("infos canny", canny)
-    #cv2.imshow("infos thresh", thresh)
-
-    contours, hierarchy = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
-    #tr = img.copy()
-    #cv2.drawContours(tr,[tag_cont],-1,(0,255,0),3)
-    #cv2.imshow("infos found canny",tr)
-    #cv2.imshow("infos found canny threshed",tag)
+    contours, hierarchy = cv2.findContours(canny.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+    cv2.drawContours(canny,contours,-1,(0,0,0),1)
+    cv2.imshow("infos found canny",canny)
+    cv2.imshow("infos found canny threshed",tag)
     #cv2.waitKey(0)
-    #print 'tag contours 0 ',tag_cont
     res = obtain_tag_info(img, tag, contours, hierarchy,tag_cont)
     ft = time.time()
-    #print "Temps lecture :",ft-dt
+    print "Temps lecture :",ft-dt
     return res

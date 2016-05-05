@@ -1,0 +1,37 @@
+# -*- coding: utf-8 -*-
+import cv2
+from picamera import PiCamera
+from picamera.array import PiRGBArray
+import time
+import tools
+
+# initialize the camera and grab a reference to the raw camera capture
+camera = PiCamera()
+camera.resolution = (tools.SIZE_X, tools.SIZE_Y)
+#camera.framerate = 64
+camera.brightness = tools.INIT_BRIGHTNESS
+"""
+rawCapture = PiRGBArray(camera, size=(tools.SIZE_X, tools.SIZE_Y))
+print "Initializing camera"
+# allow the camera to warmup
+time.sleep(3)
+camera.start_preview()
+for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
+	image = frame.array
+	cv2.imshow("Réalité",image)
+	key = cv2.waitKey(1) & 0xFF
+	rawCapture.truncate(0)
+	camera.stop_preview()
+	camera.start_preview()
+	# not working : cv2 not showing
+	# if the `q` key was pressed, break from the loop
+	if key == ord("q"):
+		break
+"""
+try:
+	camera.start_preview()
+	time.sleep(10)
+	camera.stop_preview()
+finally:
+	camera.close()
+#cv2.destroyAllWindows()

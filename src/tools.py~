@@ -271,26 +271,20 @@ def rectify(h):
     hnew[3] = h[np.argmax(diff)]
     return hnew
 
-def order_corners(cnt):
+def imgHomot(gray, cnt):
     rect = cv2.minAreaRect(cnt)
     box = np.int0(cv2.cv.BoxPoints(rect))
 
     box = rectify(box)
-    return box
-
-def imgHomot(gray, cnt):
-    box = order_corners(cnt)
     # getting the tag shape in pixel depending on its corners
-    new_h, new_w = shape_contour(box) #(449,449)
+    new_h, new_w = shape_contour(box)
     # TODO : change to :
-    print new_h,new_w
-    print "euh"
     # h = np.array([[0, 0], [new_h-1, 0], [0, new_w-1], [new_h-1,new_w-1]], np.float32)
     # according to http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_imgproc/py_geometric_transformations/py_geometric_transformations.html#perspective-transformation
-    h = np.array([[0, 0], [new_w-1, 0], [new_w-1,new_h-1], [0, new_h-1]], np.float32)
+    h = np.array([[0, 0], [new_h-1, 0], [new_h-1,new_w-1], [0, new_w-1]], np.float32)
     retval = cv2.getPerspectiveTransform(box, h)
-    warp = cv2.warpPerspective(gray, retval, (new_w,new_h))
-    print warp.shape
+    warp = cv2.warpPerspective(gray, retval, (new_h,new_w))
+    
     return warp
 
 
@@ -320,102 +314,30 @@ def canny_algorithm(img):
 def canny_lecture(image):
     # Blur
     # img = cv2.medianBlur(cv2.medianBlur(img, 3), 3)
-    at = time.time()
     img = cv2.GaussianBlur(image, (3, 3), 0)
-    """
-    bt = time.time()
+    thresh = thresholding(img,reverse=True,with_otsu=True)
+    cv2.imshow("thresh lecture",thresh)
     grad = gradientSobelXY(img)
-    print 'temps gaussian : ',bt-at
-    print 'temps gradient : ',time.time()-bt
-    bt = time.time()
-    lapl = cv2.Laplacian(img,cv2.CV_64F)
-    print 'temps laplacian : ',time.time()-bt
-    cv2.imshow("gaussizn lecture", img)
-    bt = time.time()
-    conv = convoluer(image)
-    print 'temps conv : ',time.time()-bt
-    cv2.imshow("init lecture", image)
-    cv2.imshow("convolution lecture", conv)
-    cv2.imshow("grad lecture", grad)
-    cv2.imshow("laplacian lecture",lapl)
-    dt = time.time()
-    dil = cv2.dilate(grad, None, iterations = 1)
-    print 'temps dilate : ',time.time()-dt
-    cv2.imshow("grad dil lecture",dil)
-    dt = time.time()
-    erod1 = cv2.erode(dil, None, iterations = 1)
-    print 'temps erode 1 : ',time.time()-dt
-    cv2.imshow("grad dilerode 1 lecture",erod1)
-    dt = time.time()
-    thresh = thresholding(erod1,reverse=True,with_otsu=True)
-    print 'temps thresh 1 : ',time.time()-dt
-    cv2.imshow("thresh 1 lecture",thresh)
-
-    dt = time.time()
-    erod2 = cv2.erode(dil, None, iterations = 2)
-    print 'temps erode 2 : ',time.time()-dt
-    cv2.imshow("grad dilerode 2 lecture",erod2)
-    dt = time.time()
-    thresh = thresholding(erod2, reverse=True, with_otsu=True)
-    print 'temps thresh 2 : ',time.time()-dt
-    cv2.imshow("thresh 2 lecture", thresh)
-
-
-    dt = time.time()
-    erod2 = cv2.erode(dil, None, iterations = 3)
-    print 'temps erode 3  : ',time.time()-dt
-    cv2.imshow("grad dilerode 3 lecture",erod2)
-    dt = time.time()
-    thresh = thresholding(erod2,reverse=True,with_otsu=True)
-    print 'temps thresh 3 : ',time.time()-dt
-    cv2.imshow("thresh 3 lecture",thresh)
+    cv2.imshow("grad lecture",grad)
+    
     # Dilation/Erosion to close edges
     # kernel = np.ones((2, 2), np.uint8)
     # img = cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel)
 
     # Canny edge detection using the computed median
+    high_thresh_val, thresh_im = cv2.threshold(img, THRESH_VALUE(), 255, cv2.THRESH_BINARY)
+    lower_thresh_val = CANNY_PERCENTAGE * high_thresh_val
+    canny = cv2.Canny(img, lower_thresh_val, high_thresh_val)
+    cv2.imshow("canny lecture",canny)
+    img = cv2.dilate(canny, None, iterations = 1)
+    cv2.imshow("dilate lecture",img)
+    thresh = thresholding(grad)
+    cv2.imshow("thresherode lecture",thresh)
+    img = cv2.erode(thresh, None, iterations = 1)
+    cv2.imshow("erode lecture",img)
     
-    # low, high=1.5*low
-    dt = time.time()
-    lower_thresh_val, thresh_im = cv2.threshold(img, THRESH_VALUE(), 255, cv2.THRESH_BINARY+cv2.THRESH_OTSU)
-    high_thresh_val = 1.5 * lower_thresh_val
-    canny = cv2.Canny(img, lower_thresh_val, high_thresh_val)
-    print 'temps canny 1.5 : ',time.time()-dt
-    cv2.imshow("canny lecture 1.5",canny)
-    # high, low = 0.3*high
-    dt = time.time()
-    high_thresh_val, thresh_im = cv2.threshold(img, THRESH_VALUE(), 255, cv2.THRESH_BINARY+cv2.THRESH_OTSU)
-    lower_thresh_val = 0.3 * high_thresh_val
-    canny = cv2.Canny(img, lower_thresh_val, high_thresh_val)
-    print 'temps canny 0.3 : ',time.time()-dt
-    cv2.imshow("canny lecture 0.3",canny)
-    # high, low = 0.7*high
-    dt = time.time()
-    high_thresh_val, thresh_im = cv2.threshold(img, THRESH_VALUE(), 255, cv2.THRESH_BINARY+cv2.THRESH_OTSU)
-    lower_thresh_val = 0.7 * high_thresh_val
-    canny = cv2.Canny(img, lower_thresh_val, high_thresh_val)
-    print 'temps canny 0.7 : ',time.time()-dt
-    cv2.imshow("canny lecture 0.7",canny)
-    # low, high=1*low
-    dt = time.time()
-    lower_thresh_val, thresh_im = cv2.threshold(img, THRESH_VALUE(), 255, cv2.THRESH_BINARY+cv2.THRESH_OTSU)
-    high_thresh_val = 1 * lower_thresh_val
-    canny = cv2.Canny(img, lower_thresh_val, high_thresh_val)
-    print 'temps canny 1 : ',time.time()-dt
-    cv2.imshow("canny lecture 1",canny)
-    """
-    # high, low = 0.5*high
-    dt = time.time()
-    high_thresh_val, thresh_im = cv2.threshold(img, THRESH_VALUE(), 255, cv2.THRESH_BINARY+cv2.THRESH_OTSU)
-    lower_thresh_val = 0.3 * high_thresh_val
-    canny = cv2.Canny(img, lower_thresh_val, high_thresh_val)
-    #print 'temps canny 0.5 : ',time.time()-dt
-    #cv2.imshow("canny lecture 0.5",canny)
-
-    #cv2.waitKey(0)
     # end
     return canny
-
 
 def canny_algorithm_v2(image):
     """
@@ -506,22 +428,6 @@ def check_tags(image,gray, tagz_cont,demo=False):
         views.append(data)
     return views
 
-def verify_hierarchy(hierarchy, i):
-    #next = hierarchy[0, i, 0]
-    #prev = hierarchy[0, i, 1]
-    son = hierarchy[i, 2]
-    #dad = hierarchy[0, i, 3]
-    if son==-1:
-        return False
-    enough_sons = 0
-    for nc,c in enumerate(hierarchy):
-        if nc==i: continue
-        # if the hierarchy got i a a parent
-        if c[3]==i:
-            enough_sons+=1
-    #print i," got ",enough_sons," children"
-    return (enough_sons>=4) # 5-1 ar securite
-
 def apply_filters(img):
     # Faster without np
     hist = cv2.calcHist([img], [0], None, [256], [0, 256])
@@ -534,7 +440,7 @@ def apply_filters(img):
     tt = time.time()
     #ret, thresh = cv2.threshold(img3, THRESH_VALUE(), 255, cv2.THRESH_BINARY)
     ct = time.time()
-    ret, thresh = cv2.threshold(img3, THRESH_VALUE(), 255, cv2.THRESH_BINARY)
+    ret, thresh = cv2.threshold(img3, 135, 255, cv2.THRESH_BINARY)
     gt = time.time()
     #ret, thresh3 = cv2.threshold(img3, 135, 255, cv2.THRESH_BINARY+cv2.THRESH_OTSU)
     ft = time.time()
@@ -556,12 +462,12 @@ def apply_filters(img):
     return thresh
 
 def shape_contour(contour):
-    """
-    Only for contour with specific format top left,top right, bottom
-    """
-    width = max(contour[1][0]-contour[0][0], contour[3][0]-contour[2][0])
-    height = max(contour[3][1]-contour[0][1],contour[2][1]-contour[1][1])
-    return height,width
+	"""
+	Only for contour with specific format top left,top right, bottom
+	"""
+	height = max(contour[1][0]-contour[0][0], contour[3][0]-contour[2][0])
+	width = max(contour[3][1]-contour[0][1],contour[2][1]-contour[1][1])
+	return height,width
 	
 def verifChild(hierarchy, contour,peri_dad,area_dad):
     epsilon = 0.06*cv2.arcLength(contour, True) # aproximation accuracy

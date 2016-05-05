@@ -20,13 +20,11 @@ parser.add_option("-p", "--plot", action="store_false", dest="plot", default=Tru
 parser.add_option("-s", "--save", action="store_false", dest="save", default=True,help="deactivating the saving of the images taken")
 parser.add_option("-l", "--classification", action="store_true", dest="classing", default=False,help="test the algorithm with images already classified")
 parser.add_option("-k", "--take_classification", action="store_true", dest="take_classing", default=False,help="take images for next time classification")
-parser.add_option("--dist", action="store_true", dest="distance", default=False,help="compute the distance to the tag")
 
 (options, args) = parser.parse_args()
 
 demo = options.demo
 comparison = options.compare
-dist = options.distance
 
 # TODO parsing options
 
@@ -39,7 +37,7 @@ if options.brightest:
 
 if options.classing:
     td.test_images(cl.accepted,cl.directory)
-    #plt.real_percentages_pie(cl.accepted)
+    plt.real_percentages_pie(cl.accepted)
     exit()
 
 if options.take_classing:
@@ -49,7 +47,7 @@ if options.take_classing:
 
 #if not options.anormal and not options.classing and not options.take_classing and not options.brightest:
     # to test the video programm
-td.takeVideo(demo=demo,comparison=comparison, distance=dist)
+td.takeVideo(demo=demo,comparison=comparison)
 exit()
 
 """ Trying to re-generate and save the plot corresponding to what was tested """

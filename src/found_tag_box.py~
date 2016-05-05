@@ -172,7 +172,9 @@ def getTagBox_vElias(gray):
         if not cv2.isContourConvex(approx) or len(approx)!=4:
             continue
         # if that not a parallelogramm...
-        # if the length is between [20cm;50cm] the original shape
+        # TODO 
+        # if the length is between [10cm;50cm] the original shape
+        # TODO
         # if a 30 cm ie taille(pixels)€[100*160;120;170]
         if not tools.isPerimeterOK(cv2.arcLength(approx,True)) :#or not isAreaOK(cv2.contourArea(approx)):
             continue
@@ -193,7 +195,7 @@ def getTagBox_vEmilias(gray):
     (contours,hierarchie) = cv2.findContours(edges3, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
     # if no contours were found, return None
     if len(contours) == 0:
-        return None
+    	return None
     # otherwise, sort the contours by area and compute the rotated
     # the contours with the largest area appear at the front of the list
     # bounding box of the largest contour
@@ -205,17 +207,17 @@ def getTagBox_vEmilias(gray):
         approx = cv2.approxPolyDP(cnt, 0.04 * peri, True)
         # if the shape got convex edges
         # & filter contour by 4angles shape
-        # if that not a parallelogramm...
         if len(approx)!=4 or not cv2.isContourConvex(approx):
             continue
-        # if the length is between [20cm;50cm] the original shape
+        # if that not a parallelogramm...
+        # TODO 
+        # if the length is between [10cm;50cm] the original shape
         # if the perimeter is ok ie taille(pixels)€[100*160;120;170]
         if not tools.isPerimeterOK(cv2.arcLength(approx,True)) :#or not tools.isAreaOK(cv2.contourArea(approx)):
             continue
         # filter contour by almost one child
         # no parent?
-
-        if tools.verify_hierarchy(hierarchie[0], i):
+        if hierarchie[0,i,2]!=-1 and hierarchie[0,i,3]==-1:
             """
             gray1 = gray.copy()
             print "HIERARCHY = ",hierarchie[0,i]

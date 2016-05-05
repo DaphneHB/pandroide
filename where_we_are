@@ -1,0 +1,27 @@
+		actual src: 
+thymio&Rasp: stopping & lainching together
+
+thymio.step= go_forward
+
+6-7 images/sec when no tag
+3-4 images/sec when smthg
+
+demo=True : slowing down from half (1-3 images/sec)
+
+DIST_ANGLE : distance ok + angle? + compute distance at 65 + thymio's move to synchronize
+
+brightness intervalle ? -> (decreased)
+brightness: comparison every 20 images with 5 images
+
+SetSound -> NO
+setLeds -> NO
+|--> asebaCommands.aesl not found (strange because in the same directory)
+getButton -> NO
+getSensors -> NO
+|--> no feedback (silence)
+
+TODO : not working for >50cm
+TODO : angle robot
+TODO : replace threshold for find contours reading
+TODO : ploooooooooooooooooootZ
+
